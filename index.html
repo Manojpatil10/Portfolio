@@ -1,0 +1,2411 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Russo+One&family=Sora:wght@100..800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+      integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+      integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="CSS/loader.css" />
+    <link rel="stylesheet" href="CSS/style.css" />
+  </head>
+  <body>
+    <div class="cursor-div overflow-hidden">
+      <div class="circle"></div>
+      <div class="circle"></div>
+      <div class="circle"></div>
+      <div class="circle"></div>
+      <div class="circle"></div>
+      <div class="circle"></div>
+      <div class="circle"></div>
+      <div class="circle"></div>
+      <div class="circle"></div>
+      <div class="circle"></div>
+    </div>
+    <div class="scrolltop">
+      <a class="scroll-btn" id="scrollBtn">
+        <i class="fa-solid fa-arrow-up"></i>
+      </a>
+    </div>
+    <div class="muteBtn">
+      <span class="mute-btn" onclick="muteAudio()">
+        <i class="bi bi-volume-up-fill unmute-icon"></i>
+        <i class="bi bi-volume-mute-fill mute-icon"></i>
+      </span>
+    </div>
+    <div id="progress">
+      <span id="progress-value"></span>
+    </div>
+    <div class="loading">
+      <div class="loading-text">
+        <span class="loading-text-words">L</span>
+        <span class="loading-text-words">O</span>
+        <span class="loading-text-words">A</span>
+        <span class="loading-text-words">D</span>
+        <span class="loading-text-words">I</span>
+        <span class="loading-text-words">N</span>
+        <span class="loading-text-words">G</span>
+      </div>
+    </div>
+    <audio id="audioMusic">
+      <source src="Assets/mixkit-select-click-1109.wav" type="audio/mpeg" />
+    </audio>
+    <!-- <div class="nav-bar" id="nav-bar2">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 d-flex flex-wrap align-items-center justify-content-between">
+            <div class="logo me-3 me-xl-5">
+              <a href="index.html" class="d-inline-block">
+                <img
+                  src="Images/illustration/Logo.png"
+                  alt="Logo"
+                  class="header-logo"
+                />
+              </a>
+            </div>
+            <div class="header-info-list me-4 d-none d-md-inline-block">
+              <ul class="m-0 p-0">
+                <li class="list-unstyled">
+                  <a href="#" class="header-mail">manojrpatil1000@gmail.com</a>
+                </li>
+              </ul>
+            </div>
+            <div class="header-menu-list d-none d-lg-inline-block ms-auto">
+              <ul class="p-0 m-0 d-flex">
+                <li class="list-unstyled">
+                  <a
+                    href="#hero-section"
+                    class="menu-list-anchor active-anchor"
+                    onclick="audioPlay()"
+                    >home</a
+                  >
+                </li>
+                <li class="list-unstyled">
+                  <a
+                    href="#hero-section"
+                    class="menu-list-anchor hover-anchor"
+                    onclick="audioPlay()"
+                    >about</a
+                  >
+                </li>
+                <li class="list-unstyled">
+                  <a
+                    href="#portfolio"
+                    class="menu-list-anchor hover-anchor"
+                    onclick="audioPlay()"
+                    >portfolio</a
+                  >
+                </li>
+                <li class="list-unstyled">
+                  <a
+                    href="#services"
+                    class="menu-list-anchor hover-anchor"
+                    onclick="audioPlay()"
+                    >services</a
+                  >
+                </li>
+                <li class="list-unstyled">
+                  <a
+                    href="#project"
+                    class="menu-list-anchor hover-anchor"
+                    onclick="audioPlay()"
+                    >project</a
+                  >
+                </li>
+                <li class="list-unstyled">
+                  <a
+                    href="#contact"
+                    class="menu-list-anchor hover-anchor"
+                    onclick="audioPlay()"
+                    >contact</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <div class="header-button-div d-none d-md-block">
+              <a
+                href="#contact"
+                class="header-btn text-decoration-none"
+                onclick="audioPlay()"
+                >Connect with me!</a
+              >
+            </div>
+            <div class="menu-bar ms-4 d-lg-none">
+              <div class="d-flex">
+                <i class="fa-solid fa-bars menu-icon"></i>
+                <i class="fa-solid fa-xmark cancel-icon"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div> -->
+    <div class="mobile-nav">
+      <ul class="p-0 m-0">
+        <li class="list-unstyled mobile-nav-li">
+          <a href="#hero-section" class="hero-anchor">Home</a>
+        </li>
+        <li class="list-unstyled mobile-nav-li">
+          <a href="#hero-section" class="hero-anchor">About</a>
+        </li>
+        <li class="list-unstyled mobile-nav-li">
+          <a href="#portfolio" class="portfolio-anchor">Portfolio</a>
+        </li>
+        <li class="list-unstyled mobile-nav-li">
+          <a href="#services" class="services-anchor">Services</a>
+        </li>
+        <li class="list-unstyled mobile-nav-li">
+          <a href="#project" class="project-anchor">Project</a>
+        </li>
+        <li class="list-unstyled mobile-nav-li">
+          <a href="#contact" class="contact-anchor">Contact</a>
+        </li>
+      </ul>
+    </div>
+
+    <section class="wrapper">
+      <header>
+        <section class="header" id="header">
+          <nav class="nav-bar">
+            <div class="container">
+              <div class="row">
+                <div class="col-12 d-flex flex-wrap align-items-center justify-content-between">
+                  <div class="logo me-3 me-xl-5">
+                    <a href="index.html" class="d-inline-block">
+                      <img
+                        src="Images/illustration/Logo.png"
+                        alt="Logo"
+                        class="header-logo"
+                      />
+                    </a>
+                  </div>
+                  <div class="header-info-list me-4 d-none d-md-inline-block">
+                    <ul class="m-0 p-0">
+                      <li class="list-unstyled">
+                        <a href="#" class="header-mail"
+                          >manojrpatil1000@gmail.com</a
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="header-menu-list d-none d-lg-inline-block ms-auto">
+                    <ul class="p-0 m-0 d-flex">
+                      <li class="list-unstyled">
+                        <a
+                          href="#hero-section"
+                          class="menu-list-anchor active-anchor"
+                          id="scrollBtn"
+                          >home</a
+                        >
+                      </li>
+                      <li class="list-unstyled">
+                        <a
+                          href="#hero-section"
+                          class="menu-list-anchor hover-anchor"
+                          id="scrollBtn"
+                          >about</a
+                        >
+                      </li>
+                      <li class="list-unstyled">
+                        <a
+                          href="#portfolio"
+                          class="menu-list-anchor hover-anchor"
+                          id="scrollBtn"
+                          >portfolio</a
+                        >
+                      </li>
+                      <li class="list-unstyled">
+                        <a
+                          href="#services"
+                          class="menu-list-anchor hover-anchor"
+                          id="scrollBtn"
+                          >services</a
+                        >
+                      </li>
+                      <li class="list-unstyled">
+                        <a
+                          href="#project"
+                          class="menu-list-anchor hover-anchor"
+                          id="scrollBtn"
+                          >project</a
+                        >
+                      </li>
+                      <li class="list-unstyled">
+                        <a
+                          href="#contact"
+                          class="menu-list-anchor hover-anchor"
+                          id="scrollBtn"
+                          >contact</a
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="header-button-div d-none d-xl-block">
+                    <a
+                      href="#contact"
+                      class="header-btn text-decoration-none"
+                      onclick="audioPlay()"
+                      >Connect with me!</a
+                    >
+                  </div>
+                  <div class="menu-bar ms-4 d-lg-none">
+                    <div class="d-flex">
+                      <i class="fa-solid fa-bars menu-icon"></i>
+                      <i class="fa-solid fa-xmark cancel-icon"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </nav>
+          <section class="hero-section" id="hero-section">
+            <div class="intro-text">
+              <svg viewBox="0 0 1320 300">
+                <text
+                  x="50%"
+                  y="50%"
+                  text-anchor="middle"
+                  class="animate-stroke"
+                >
+                  HI
+                </text>
+              </svg>
+            </div>
+            <div class="container">
+              <div class="row">
+                <div class="col-md-6 mt-lg-5">
+                  <div class="hero-content-box">
+                    <span class="hero-content-span">I am Manoj Patil</span>
+                    <h1 class="hero-content-h1">
+                      <!-- web developer + <br />
+                      UX designer -->
+                      MERN stack <br />
+                      developer
+                    </h1>
+                    <div class="hero-img-div text-center d-md-none">
+                      <img
+                        src="Images/illustration/myPhoto.png"
+                        alt="Image"
+                        class="hero-img"
+                      />
+                    </div>
+                    <p class="hero-content-para">
+                      Building scalable and dynamic web applications with the
+                      power of MERN stack.
+                    </p>
+                    <div class="button-box d-flex flex-wrap align-items-center">
+                      <a
+                        href="#portfolio"
+                        class="new-btn"
+                        onclick="audioPlay()"
+                      >
+                        <span class="btn-span"></span>
+                        <span>Portfolio</span>
+                        <span>
+                          <!-- <i class="fa-solid fa-download btn-icon d-flex justify-content-center align-items-center"></i> -->
+                          <i
+                            class="fa-solid fa-briefcase btn-icon d-flex justify-content-center align-items-center"
+                          ></i>
+                        </span>
+                      </a>
+                      <ul class="p-0 m-0 social-ul">
+                        <li class="list-unstyled">
+                          <a
+                            href="https://www.linkedin.com/in/manojpatil10/"
+                            target="_blank"
+                            class="social-icons"
+                            title="LinkedIn"
+                            ><i class="bi bi-linkedin social-i"></i>
+                            <span class="social-icon-span"></span>
+                          </a>
+                        </li>
+                        <li class="list-unstyled">
+                          <a
+                            href="https://github.com/Manojpatil10"
+                            target="_blank"
+                            class="social-icons"
+                            title="GitHub"
+                            ><i class="bi bi-github social-i"></i
+                            ><span class="social-icon-span"></span>
+                          </a>
+                        </li>
+                        <li class="list-unstyled">
+                          <a
+                            href="https://www.hackerrank.com/profile/manojrpatil1000"
+                            target="_blank"
+                            class="social-icons"
+                            title="Hackerrank"
+                            ><i
+                              class="fa-brands fa-hackerrank social-i social-i2"
+                            ></i>
+                            <span class="social-icon-span"></span>
+                          </a>
+                        </li>
+                        <li class="list-unstyled">
+                          <a
+                            href="https://profile.indeed.com/p/manojp-9pxynph"
+                            class="social-icons"
+                            target="_blank"
+                            title="Indeed"
+                            class="d-flex justify-content-center align-items-center"
+                          >
+                            <img
+                              src="Images/illustration/icons8-indeed.svg"
+                              alt="Indeed Img"
+                              class="indeed-img"
+                            />
+                            <img
+                              src="Images/illustration/icons8-indeed(1).svg"
+                              alt="Indeed Img"
+                              class="indeed-img1"
+                            />
+                            <!-- <i class="bi bi-dribbble social-i"></i> -->
+                            <span class="social-icon-span"></span>
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6 d-none d-md-block">
+                  <div class="hero-img-div text-center">
+                    <img
+                      src="Images/illustration/myPhoto3.png"
+                      alt="Image"
+                      class="hero-img"
+                    />
+                    <!-- <img src="Images/illustration/My_photo2.jpg.jpg" alt="Image" class="hero-img"> -->
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+        </section>
+      </header>
+
+      <main>
+        <section class="services" id="services">
+          <div class="shape-div">
+            <img
+              src="./Images/illustration/couner-5-shape-1.png"
+              alt="shape-1"
+              class="shape-1"
+            />
+            <img
+              src="./Images/illustration/couner-5-shape-2.png"
+              alt="shape-2"
+              class="shape-2"
+            />
+          </div>
+          <div class="container">
+            <div class="row">
+              <div class="text-center col-12 mb-4">
+                <h2 class="section-title">what i know</h2>
+                <p class="section-para">
+                  Technologies and tools I specialize in, shaping innovative and
+                  efficient solutions.
+                </p>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-12">
+                <div class="services-widget">
+                  <div class="service-item">
+                    <div
+                      class="service-title d-flex justify-content-between mb-2"
+                    >
+                      <div class="col-md-5 d-flex align-items-center">
+                        <span class="number">01</span>
+                        <h3 class="ms-3 mb-0 service-h3">web development</h3>
+                      </div>
+                      <div class="service-content d-none d-md-block col-md-5">
+                        <p class="mb-0">
+                          Providing end-to-end web development services to
+                          create responsive, user-friendly websites. I build
+                          scalable solutions that bring your ideas to life.
+                        </p>
+                      </div>
+                      <div
+                        class="col-md-2 d-flex justify-content-end align-items-center"
+                      >
+                        <i class="bi bi-arrow-up-right arrow-icon me-3"></i>
+                      </div>
+                    </div>
+                    <div class="service-content d-md-none">
+                      <p class="mb-0">
+                        Providing end-to-end web development services to create
+                        responsive, user-friendly websites. I build scalable
+                        solutions that bring your ideas to life.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="service-item">
+                    <div
+                      class="service-title d-flex justify-content-between mb-2"
+                    >
+                      <div class="col-md-5 d-flex align-items-center">
+                        <span class="number">02</span>
+                        <h3 class="ms-3 mb-0 service-h3">
+                          ReactJs development
+                        </h3>
+                      </div>
+                      <div class="service-content d-none d-md-block col-md-5">
+                        <p class="mb-0">
+                          Specializing in React.js development to build dynamic,
+                          interactive, and high-performance web applications. I
+                          create seamless user experiences with efficient and
+                          reusable components.
+                        </p>
+                      </div>
+                      <div
+                        class="col-md-2 d-flex justify-content-end align-items-center"
+                      >
+                        <i class="bi bi-arrow-up-right arrow-icon me-3"></i>
+                      </div>
+                    </div>
+                    <div class="service-content d-md-none">
+                      <p class="mb-0">
+                        Specializing in React.js development to build dynamic,
+                        interactive, and high-performance web applications. I
+                        create seamless user experiences with efficient and
+                        reusable components.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="service-item">
+                    <div
+                      class="service-title d-flex justify-content-between mb-2"
+                    >
+                      <div class="col-md-5 d-flex align-items-center">
+                        <span class="number">03</span>
+                        <h3 class="ms-3 mb-0 service-h3">
+                          full stack development
+                        </h3>
+                      </div>
+                      <div class="service-content d-none d-md-block col-md-5">
+                        <p class="mb-0">
+                          Offering full-stack development services to build
+                          robust and scalable web applications. From front-end
+                          design to back-end functionality, I deliver end-to-end
+                          solutions tailored to your needs.
+                        </p>
+                      </div>
+                      <div
+                        class="col-md-2 d-flex justify-content-end align-items-center"
+                      >
+                        <i class="bi bi-arrow-up-right arrow-icon me-3"></i>
+                      </div>
+                    </div>
+                    <div class="service-content d-md-none">
+                      <p class="mb-0">
+                        Offering full-stack development services to build robust
+                        and scalable web applications. From front-end design to
+                        back-end functionality, I deliver end-to-end solutions
+                        tailored to your needs.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="projects" id="project">
+          <div class="container">
+            <div class="text-center">
+              <h2 class="section-title">my recent works</h2>
+              <p class="section-para">Recent Projects</p>
+            </div>
+            <div class="projects-div">
+              <div class="project-outer project-outer1">
+                <div class="project mb-4">
+                  <div class="row justify-content-center align-items-center">
+                    <div class="col-lg-5">
+                      <div class="project-title">
+                        <span class="mb-3">front-end</span>
+                        <h3>TaskTrackr</h3>
+                      </div>
+                      <div class="project-desc mb-3">
+                        <p>
+                          Task management system with login and signup
+                          functionality. Admins can assign tasks to specific
+                          employees and track progress, while employees can
+                          provide feedback to the admin, ensuring effective
+                          communication and task management.
+                        </p>
+                      </div>
+                      <div class="project-feature mt-5">
+                        <span
+                          ><i class="bi bi-check2 me-4"></i>Login and Signup
+                          functionality.</span
+                        >
+                        <span
+                          ><i class="bi bi-check2 me-4"></i>Task assignment by
+                          admin.</span
+                        >
+                        <span
+                          ><i class="bi bi-check2 me-4"></i>Feedback submission
+                          by employees.</span
+                        >
+                      </div>
+                      <div class="project-technologies">
+                        <ul class="m-0 p-0 d-flex flex-wrap">
+                          <li class="list-unstyled me-2">
+                            <a
+                              href="#"
+                              class="project-tech d-flex justify-content-center align-items-center"
+                              >html</a
+                            >
+                          </li>
+                          <li class="list-unstyled me-2">
+                            <a
+                              href="#"
+                              class="project-tech d-flex justify-content-center align-items-center"
+                              >css</a
+                            >
+                          </li>
+                          <li class="list-unstyled me-2">
+                            <a
+                              href="#"
+                              class="project-tech d-flex justify-content-center align-items-center"
+                              >bootstrap</a
+                            >
+                          </li>
+                          <li class="list-unstyled me-2">
+                            <a
+                              href="#"
+                              class="project-tech d-flex justify-content-center align-items-center"
+                              >Javascript</a
+                            >
+                          </li>
+                          <li class="list-unstyled me-2">
+                            <a
+                              href="#"
+                              class="project-tech d-flex justify-content-center align-items-center"
+                              >ReactJs</a
+                            >
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="owl-carousel owl-theme image-slider col-lg-7">
+                      <div class="item project-img p-3">
+                        <img
+                          src="Images/illustration/Screenshot (1).png"
+                          alt="Project Image"
+                          class="w-100"
+                        />
+                      </div>
+                      <div class="item project-img p-3">
+                        <img
+                          src="Images/illustration/Screenshot (2).png"
+                          alt="Project Image"
+                          class="w-100"
+                        />
+                      </div>
+                      <div class="item project-img p-3">
+                        <img
+                          src="Images/illustration/Screenshot (3).png"
+                          alt="Project Image"
+                          class="w-100"
+                        />
+                      </div>
+                      <div class="item project-img p-3">
+                        <img
+                          src="Images/illustration/Screenshot (4).png"
+                          alt="Project Image"
+                          class="w-100"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="visit-project">
+                    <a href="#" class="m-xl-0 d-flex align-items-center"
+                      >view live project
+                      <div class="project-icon-box ms-2">
+                        <i class="bi bi-arrow-right icon-first"></i>
+                        <i class="bi bi-arrow-right icon-second"></i>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="project-outer project-outer2">
+                <div class="project mb-4">
+                  <div class="row justify-content-center align-items-center">
+                    <div class="col-lg-5">
+                      <div class="project-title">
+                        <span class="mb-3">front-end</span>
+                        <h3>StudentHive</h3>
+                      </div>
+                      <div class="project-desc mb-3">
+                        <p>
+                          A student data management system where students input
+                          their details and marks, which are stored in a table.
+                          Progress can be viewed in an animated format using
+                          "Show" and "Hide" buttons for individual students.
+                        </p>
+                      </div>
+                      <div class="project-feature mt-5">
+                        <span
+                          ><i class="bi bi-check2 me-4"></i>Add student details
+                          and marks.</span
+                        >
+                        <span
+                          ><i class="bi bi-check2 me-4"></i>Show or hide student
+                          progress.</span
+                        >
+                        <span
+                          ><i class="bi bi-check2 me-4"></i>Animated progress
+                          display.</span
+                        >
+                      </div>
+                      <div class="project-technologies">
+                        <ul class="m-0 p-0 d-flex flex-wrap">
+                          <li class="list-unstyled me-2">
+                            <a
+                              href="#"
+                              class="project-tech d-flex justify-content-center align-items-center"
+                              >html</a
+                            >
+                          </li>
+                          <li class="list-unstyled me-2">
+                            <a
+                              href="#"
+                              class="project-tech d-flex justify-content-center align-items-center"
+                              >css</a
+                            >
+                          </li>
+                          <li class="list-unstyled me-2">
+                            <a
+                              href="#"
+                              class="project-tech d-flex justify-content-center align-items-center"
+                              >bootstrap</a
+                            >
+                          </li>
+                          <li class="list-unstyled me-2">
+                            <a
+                              href="#"
+                              class="project-tech d-flex justify-content-center align-items-center"
+                              >Javascript</a
+                            >
+                          </li>
+                          <li class="list-unstyled me-2">
+                            <a
+                              href="#"
+                              class="project-tech d-flex justify-content-center align-items-center"
+                              >ReactJs</a
+                            >
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="col-lg-7">
+                      <div class="project-img p-3">
+                        <img
+                          src="Images/illustration/Screenshot (5).png"
+                          alt="Project Image"
+                          class="w-100"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="visit-project">
+                    <a href="#" class="m-xl-0 d-flex align-items-center"
+                      >view live project
+                      <div class="project-icon-box ms-2">
+                        <i class="bi bi-arrow-right icon-first"></i>
+                        <i class="bi bi-arrow-right icon-second"></i>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="project-outer project-outer3">
+                <div class="project mb-4">
+                  <div class="row justify-content-center align-items-center">
+                    <div class="col-lg-5">
+                      <div class="project-title">
+                        <span class="mb-3">front-end</span>
+                        <h3>GeoExplorer</h3>
+                      </div>
+                      <div class="project-desc mb-3">
+                        <p>
+                          A user-friendly country information app that allows
+                          users to explore countries by region. Users can search
+                          for specific countries and access key details,
+                          including their capital, geographical boundaries,
+                          currency, population, and more.
+                        </p>
+                      </div>
+                      <div class="project-feature mt-5">
+                        <span
+                          ><i class="bi bi-check2 me-4"></i>Search for countries
+                          by region.</span
+                        >
+                        <span
+                          ><i class="bi bi-check2 me-4"></i>View basic details
+                          like capital and currency.</span
+                        >
+                        <span
+                          ><i class="bi bi-check2 me-4"></i>Explore geographical
+                          boundaries.</span
+                        >
+                      </div>
+                      <div class="project-technologies">
+                        <ul class="m-0 p-0 d-flex flex-wrap">
+                          <li class="list-unstyled me-2">
+                            <a
+                              href="#"
+                              class="project-tech d-flex justify-content-center align-items-center"
+                              >html</a
+                            >
+                          </li>
+                          <li class="list-unstyled me-2">
+                            <a
+                              href="#"
+                              class="project-tech d-flex justify-content-center align-items-center"
+                              >css</a
+                            >
+                          </li>
+                          <li class="list-unstyled me-2">
+                            <a
+                              href="#"
+                              class="project-tech d-flex justify-content-center align-items-center"
+                              >bootstrap</a
+                            >
+                          </li>
+                          <li class="list-unstyled me-2">
+                            <a
+                              href="#"
+                              class="project-tech d-flex justify-content-center align-items-center"
+                              >Javascript</a
+                            >
+                          </li>
+                          <li class="list-unstyled me-2">
+                            <a
+                              href="#"
+                              class="project-tech d-flex justify-content-center align-items-center"
+                              >ReactJs</a
+                            >
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="owl-carousel owl-theme image-slider col-lg-7">
+                      <div class="item project-img p-3">
+                        <img
+                          src="Images/illustration/Screenshot (6).png"
+                          alt="Project Image"
+                          class="w-100"
+                        />
+                      </div>
+                      <div class="item project-img p-3">
+                        <img
+                          src="Images/illustration/Screenshot (7).png"
+                          alt="Project Image"
+                          class="w-100"
+                        />
+                      </div>
+                      <div class="item project-img p-3">
+                        <img
+                          src="Images/illustration/Screenshot (8).png"
+                          alt="Project Image"
+                          class="w-100"
+                        />
+                      </div>
+                      <div class="item project-img p-3">
+                        <img
+                          src="Images/illustration/Screenshot (9).png"
+                          alt="Project Image"
+                          class="w-100"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="visit-project">
+                    <a href="#" class="m-xl-0 d-flex align-items-center"
+                      >view live project
+                      <div class="project-icon-box ms-2">
+                        <i class="bi bi-arrow-right icon-first"></i>
+                        <i class="bi bi-arrow-right icon-second"></i>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="project-outer project-outer4">
+                <div class="project mb-4">
+                  <div class="row justify-content-center align-items-center">
+                    <div class="col-lg-5">
+                      <div class="project-title">
+                        <span class="mb-3">front-end</span>
+                        <h3>NewsGlide</h3>
+                      </div>
+                      <div class="project-desc mb-3">
+                        <p>
+                          A news web app built using React, allowing users to
+                          stay up-to-date with the latest headlines, articles,
+                          and breaking news from multiple sources. The app
+                          features a clean interface for easy navigation and
+                          access to various news categories.
+                        </p>
+                      </div>
+                      <div class="project-feature mt-5">
+                        <span
+                          ><i class="bi bi-check2 me-4"></i>Latest News</span
+                        >
+                        <span
+                          ><i class="bi bi-check2 me-4"></i>Search
+                          Functionality</span
+                        >
+                        <span
+                          ><i class="bi bi-check2 me-4"></i>News
+                          Categories</span
+                        >
+                      </div>
+                      <div class="project-technologies">
+                        <ul class="m-0 p-0 d-flex flex-wrap">
+                          <li class="list-unstyled me-2">
+                            <a
+                              href="#"
+                              class="project-tech d-flex justify-content-center align-items-center"
+                              >html</a
+                            >
+                          </li>
+                          <li class="list-unstyled me-2">
+                            <a
+                              href="#"
+                              class="project-tech d-flex justify-content-center align-items-center"
+                              >css</a
+                            >
+                          </li>
+                          <li class="list-unstyled me-2">
+                            <a
+                              href="#"
+                              class="project-tech d-flex justify-content-center align-items-center"
+                              >bootstrap</a
+                            >
+                          </li>
+                          <li class="list-unstyled me-2">
+                            <a
+                              href="#"
+                              class="project-tech d-flex justify-content-center align-items-center"
+                              >Javascript</a
+                            >
+                          </li>
+                          <li class="list-unstyled me-2">
+                            <a
+                              href="#"
+                              class="project-tech d-flex justify-content-center align-items-center"
+                              >reactjs</a
+                            >
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="col-lg-7">
+                      <div class="project-img p-3">
+                        <img
+                          src="Images/illustration/Screenshot (10).png"
+                          alt="Project Image"
+                          class="w-100"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="visit-project">
+                    <a href="#" class="m-xl-0 d-flex align-items-center"
+                      >view live project
+                      <div class="project-icon-box ms-2">
+                        <i class="bi bi-arrow-right icon-first"></i>
+                        <i class="bi bi-arrow-right icon-second"></i>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="project-outer project-outer5">
+                <div class="project mb-4">
+                  <div class="row justify-content-center align-items-center">
+                    <div class="col-lg-5">
+                      <div class="project-title">
+                        <span class="mb-3">front-end</span>
+                        <h3>SnakeRun</h3>
+                      </div>
+                      <div class="project-desc mb-3">
+                        <p>
+                          A classic snake game built using HTML, CSS, and
+                          JavaScript. The game features smooth controls,
+                          increasing difficulty as the snake grows, and all the
+                          traditional functionalities of a classic snake game.
+                        </p>
+                      </div>
+                      <div class="project-feature mt-5">
+                        <span
+                          ><i class="bi bi-check2 me-4"></i>Dynamic gameplay
+                          with growing snake length.</span
+                        >
+                        <span
+                          ><i class="bi bi-check2 me-4"></i>Keyboard controls
+                          for smooth movement.</span
+                        >
+                        <span
+                          ><i class="bi bi-check2 me-4"></i>Score tracking to
+                          monitor progress.</span
+                        >
+                      </div>
+                      <div class="project-technologies">
+                        <ul class="m-0 p-0 d-flex flex-wrap">
+                          <li class="list-unstyled me-2">
+                            <a
+                              href="#"
+                              class="project-tech d-flex justify-content-center align-items-center"
+                              >html</a
+                            >
+                          </li>
+                          <li class="list-unstyled me-2">
+                            <a
+                              href="#"
+                              class="project-tech d-flex justify-content-center align-items-center"
+                              >css</a
+                            >
+                          </li>
+                          <li class="list-unstyled me-2">
+                            <a
+                              href="#"
+                              class="project-tech d-flex justify-content-center align-items-center"
+                              >bootstrap</a
+                            >
+                          </li>
+                          <li class="list-unstyled me-2">
+                            <a
+                              href="#"
+                              class="project-tech d-flex justify-content-center align-items-center"
+                              >Javascript</a
+                            >
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="col-lg-7">
+                      <div class="project-img p-3">
+                        <img
+                          src="Images/illustration/Screenshot (11).png"
+                          alt="Project Image"
+                          class="w-100"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="visit-project">
+                    <a
+                      href="https://manojpatil10.github.io/SnakeRun/"
+                      target="_blank"
+                      class="m-xl-0 d-flex align-items-center"
+                      >view live project
+                      <div class="project-icon-box ms-2">
+                        <i class="bi bi-arrow-right icon-first"></i>
+                        <i class="bi bi-arrow-right icon-second"></i>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="text-center mt-5">
+              <button class="all-projects">see all projects</button>
+            </div>
+          </div>
+        </section>
+
+        <section class="more-projects">
+          <div class="container">
+            <div class="front-end-projects">
+              <h2 class="project-section">Front-end Projects</h2>
+              <div class="owl-carousel owl-theme project-slider">
+                <div class="item projectDiv">
+                  <div class="projectDiv-img mb-3">
+                    <img
+                      src="./Images/illustration/Screenshot (13).png"
+                      alt="exhaust"
+                      class="w-100"
+                    />
+                  </div>
+                  <div class="project-details">
+                    <h2>exhaust</h2>
+                    <p>
+                      A Car Garage Website is a user-friendly platform that
+                      allows customers to book car services, explore service
+                      details, providing seamless access to automotive care.
+                    </p>
+                    <div class="project-technologies mb-4">
+                      <ul class="m-0 p-0 d-flex flex-wrap">
+                        <li class="list-unstyled me-2">
+                          <a
+                            href="#"
+                            class="project-tech d-flex justify-content-center align-items-center"
+                            >html</a
+                          >
+                        </li>
+                        <li class="list-unstyled me-2">
+                          <a
+                            href="#"
+                            class="project-tech d-flex justify-content-center align-items-center"
+                            >css</a
+                          >
+                        </li>
+                        <li class="list-unstyled me-2">
+                          <a
+                            href="#"
+                            class="project-tech d-flex justify-content-center align-items-center"
+                            >bootstrap</a
+                          >
+                        </li>
+                        <li class="list-unstyled me-2">
+                          <a
+                            href="#"
+                            class="project-tech d-flex justify-content-center align-items-center"
+                            >Javascript</a
+                          >
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="visit-project">
+                      <a
+                        href="https://manojpatil10.github.io/Car-garage/"
+                        target="_blank"
+                        class="m-xl-0 d-flex align-items-center"
+                        >view live project
+                        <div class="project-icon-box ms-2">
+                          <i class="bi bi-arrow-right icon-first"></i>
+                          <i class="bi bi-arrow-right icon-second"></i>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="item projectDiv">
+                  <div class="projectDiv-img mb-3">
+                    <img
+                      src="./Images/illustration/Screenshot (14).png"
+                      alt="Restbook"
+                      class="w-100"
+                    />
+                  </div>
+                  <div class="project-details">
+                    <h2>Restbook</h2>
+                    <p>
+                      A Restaurant Website is an engaging platform that
+                      showcases the menu, allows table reservations, displays
+                      special offers, and provides contact details to enhance
+                      the dining experience and attract customers.
+                    </p>
+                    <div class="project-technologies mb-4">
+                      <ul class="m-0 p-0 d-flex flex-wrap">
+                        <li class="list-unstyled me-2">
+                          <a
+                            href="#"
+                            class="project-tech d-flex justify-content-center align-items-center"
+                            >html</a
+                          >
+                        </li>
+                        <li class="list-unstyled me-2">
+                          <a
+                            href="#"
+                            class="project-tech d-flex justify-content-center align-items-center"
+                            >css</a
+                          >
+                        </li>
+                        <li class="list-unstyled me-2">
+                          <a
+                            href="#"
+                            class="project-tech d-flex justify-content-center align-items-center"
+                            >bootstrap</a
+                          >
+                        </li>
+                        <li class="list-unstyled me-2">
+                          <a
+                            href="#"
+                            class="project-tech d-flex justify-content-center align-items-center"
+                            >Javascript</a
+                          >
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="visit-project">
+                      <a
+                        href="https://manojpatil10.github.io/Cafe/"
+                        target="_blank"
+                        class="m-xl-0 d-flex align-items-center"
+                        >view live project
+                        <div class="project-icon-box ms-2">
+                          <i class="bi bi-arrow-right icon-first"></i>
+                          <i class="bi bi-arrow-right icon-second"></i>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="item projectDiv">
+                  <div class="projectDiv-img mb-3">
+                    <img
+                      src="./Images/illustration/Screenshot (15).png"
+                      alt="Ride-on"
+                      class="w-100"
+                    />
+                  </div>
+                  <div class="project-details">
+                    <h2>Ride-on</h2>
+                    <p>
+                      A Bike Showroom Website is a sleek platform showcasing a
+                      wide range of bikes, detailed specifications, pricing, and
+                      features, with options for booking test rides and
+                      contacting the showroom.
+                    </p>
+                    <div class="project-technologies mb-4">
+                      <ul class="m-0 p-0 d-flex flex-wrap">
+                        <li class="list-unstyled me-2">
+                          <a
+                            href="#"
+                            class="project-tech d-flex justify-content-center align-items-center"
+                            >html</a
+                          >
+                        </li>
+                        <li class="list-unstyled me-2">
+                          <a
+                            href="#"
+                            class="project-tech d-flex justify-content-center align-items-center"
+                            >css</a
+                          >
+                        </li>
+                        <li class="list-unstyled me-2">
+                          <a
+                            href="#"
+                            class="project-tech d-flex justify-content-center align-items-center"
+                            >bootstrap</a
+                          >
+                        </li>
+                        <li class="list-unstyled me-2">
+                          <a
+                            href="#"
+                            class="project-tech d-flex justify-content-center align-items-center"
+                            >Javascript</a
+                          >
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="visit-project">
+                      <a
+                        href="https://manojpatil10.github.io/Bike-showroom/"
+                        target="_blank"
+                        class="m-xl-0 d-flex align-items-center"
+                        >view live project
+                        <div class="project-icon-box ms-2">
+                          <i class="bi bi-arrow-right icon-first"></i>
+                          <i class="bi bi-arrow-right icon-second"></i>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="item projectDiv">
+                  <div class="projectDiv-img mb-3">
+                    <img
+                      src="./Images/illustration/Screenshot (16).png"
+                      alt="Cozystay"
+                      class="w-100"
+                    />
+                  </div>
+                  <div class="project-details">
+                    <h2>Cozystay</h2>
+                    <p>
+                      A Hotel Website is a professional platform that highlights
+                      room options, amenities, and services, allowing users to
+                      check availability, make reservations, and explore
+                      exclusive offers for a seamless booking experience.
+                    </p>
+                    <div class="project-technologies mb-4">
+                      <ul class="m-0 p-0 d-flex flex-wrap">
+                        <li class="list-unstyled me-2">
+                          <a
+                            href="#"
+                            class="project-tech d-flex justify-content-center align-items-center"
+                            >html</a
+                          >
+                        </li>
+                        <li class="list-unstyled me-2">
+                          <a
+                            href="#"
+                            class="project-tech d-flex justify-content-center align-items-center"
+                            >css</a
+                          >
+                        </li>
+                        <li class="list-unstyled me-2">
+                          <a
+                            href="#"
+                            class="project-tech d-flex justify-content-center align-items-center"
+                            >bootstrap</a
+                          >
+                        </li>
+                        <li class="list-unstyled me-2">
+                          <a
+                            href="#"
+                            class="project-tech d-flex justify-content-center align-items-center"
+                            >Javascript</a
+                          >
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="visit-project">
+                      <a
+                        href="https://manojpatil10.github.io/Hotel/"
+                        target="_blank"
+                        class="m-xl-0 d-flex align-items-center"
+                        >view live project
+                        <div class="project-icon-box ms-2">
+                          <i class="bi bi-arrow-right icon-first"></i>
+                          <i class="bi bi-arrow-right icon-second"></i>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="owl-carousel owl-theme project-slider mt-4">
+                <div class="item projectDiv">
+                  <div class="projectDiv-img mb-3">
+                    <img
+                      src="./Images/illustration/Screenshot (17).png"
+                      alt="Jetly"
+                      class="w-100"
+                    />
+                  </div>
+                  <div class="project-details">
+                    <h2>Jetly</h2>
+                    <p>
+                      An Aviation Website is a dynamic platform offering flight
+                      schedules, ticket booking, and real-time updates, along
+                      with information about destinations, services, and travel
+                      policies to ensure a seamless journey.
+                    </p>
+                    <div class="project-technologies mb-4">
+                      <ul class="m-0 p-0 d-flex flex-wrap">
+                        <li class="list-unstyled me-2">
+                          <a
+                            href="#"
+                            class="project-tech d-flex justify-content-center align-items-center"
+                            >html</a
+                          >
+                        </li>
+                        <li class="list-unstyled me-2">
+                          <a
+                            href="#"
+                            class="project-tech d-flex justify-content-center align-items-center"
+                            >css</a
+                          >
+                        </li>
+                        <li class="list-unstyled me-2">
+                          <a
+                            href="#"
+                            class="project-tech d-flex justify-content-center align-items-center"
+                            >bootstrap</a
+                          >
+                        </li>
+                        <li class="list-unstyled me-2">
+                          <a
+                            href="#"
+                            class="project-tech d-flex justify-content-center align-items-center"
+                            >Javascript</a
+                          >
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="visit-project">
+                      <a
+                        href="https://manojpatil10.github.io/Aviation/"
+                        target="_blank"
+                        class="m-xl-0 d-flex align-items-center"
+                        >view live project
+                        <div class="project-icon-box ms-2">
+                          <i class="bi bi-arrow-right icon-first"></i>
+                          <i class="bi bi-arrow-right icon-second"></i>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="item projectDiv">
+                  <div class="projectDiv-img mb-3">
+                    <img
+                      src="./Images/illustration/Screenshot (18).png"
+                      alt="Banker"
+                      class="w-100"
+                    />
+                  </div>
+                  <div class="project-details">
+                    <h2>Banker</h2>
+                    <p>
+                      A Bank Website is a secure platform providing access to
+                      account management, online transactions, loan
+                      applications, and financial services, ensuring convenience
+                      and trust for customers.
+                    </p>
+                    <div class="project-technologies mb-4">
+                      <ul class="m-0 p-0 d-flex flex-wrap">
+                        <li class="list-unstyled me-2">
+                          <a
+                            href="#"
+                            class="project-tech d-flex justify-content-center align-items-center"
+                            >html</a
+                          >
+                        </li>
+                        <li class="list-unstyled me-2">
+                          <a
+                            href="#"
+                            class="project-tech d-flex justify-content-center align-items-center"
+                            >css</a
+                          >
+                        </li>
+                        <li class="list-unstyled me-2">
+                          <a
+                            href="#"
+                            class="project-tech d-flex justify-content-center align-items-center"
+                            >Javascript</a
+                          >
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="visit-project">
+                      <a
+                        href="https://manojpatil10.github.io/Bank/"
+                        target="_blank"
+                        class="m-xl-0 d-flex align-items-center"
+                        >view live project
+                        <div class="project-icon-box ms-2">
+                          <i class="bi bi-arrow-right icon-first"></i>
+                          <i class="bi bi-arrow-right icon-second"></i>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="item projectDiv">
+                  <div class="projectDiv-img mb-3">
+                    <img
+                      src="./Images/illustration/Screenshot (19).png"
+                      alt="Fittlife"
+                      class="w-100"
+                    />
+                  </div>
+                  <div class="project-details">
+                    <h2>Fittlife</h2>
+                    <p>
+                      A Gym Website is a dynamic platform showcasing fitness
+                      programs, membership plans, trainer profiles, and class
+                      schedules, with options for booking sessions and exploring
+                      health tips to inspire a healthy lifestyle.
+                    </p>
+                    <div class="project-technologies mb-4">
+                      <ul class="m-0 p-0 d-flex flex-wrap">
+                        <li class="list-unstyled me-2">
+                          <a
+                            href="#"
+                            class="project-tech d-flex justify-content-center align-items-center"
+                            >html</a
+                          >
+                        </li>
+                        <li class="list-unstyled me-2">
+                          <a
+                            href="#"
+                            class="project-tech d-flex justify-content-center align-items-center"
+                            >css</a
+                          >
+                        </li>
+                        <li class="list-unstyled me-2">
+                          <a
+                            href="#"
+                            class="project-tech d-flex justify-content-center align-items-center"
+                            >bootstrap</a
+                          >
+                        </li>
+                        <li class="list-unstyled me-2">
+                          <a
+                            href="#"
+                            class="project-tech d-flex justify-content-center align-items-center"
+                            >Javascript</a
+                          >
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="visit-project">
+                      <a
+                        href="https://manojpatil10.github.io/Gym/"
+                        target="_blank"
+                        class="m-xl-0 d-flex align-items-center"
+                        >view live project
+                        <div class="project-icon-box ms-2">
+                          <i class="bi bi-arrow-right icon-first"></i>
+                          <i class="bi bi-arrow-right icon-second"></i>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="item projectDiv">
+                  <div class="projectDiv-img mb-3">
+                    <img
+                      src="./Images/illustration/Screenshot (20).png"
+                      alt="Mediplus"
+                      class="w-100"
+                    />
+                  </div>
+                  <div class="project-details">
+                    <h2>Mediplus</h2>
+                    <p>
+                      A Hospital Website is a comprehensive platform providing
+                      information about medical services, doctor appointments,
+                      specialties, and facilities, ensuring patients can access
+                      healthcare conveniently and efficiently.
+                    </p>
+                    <div class="project-technologies mb-4">
+                      <ul class="m-0 p-0 d-flex flex-wrap">
+                        <li class="list-unstyled me-2">
+                          <a
+                            href="#"
+                            class="project-tech d-flex justify-content-center align-items-center"
+                            >html</a
+                          >
+                        </li>
+                        <li class="list-unstyled me-2">
+                          <a
+                            href="#"
+                            class="project-tech d-flex justify-content-center align-items-center"
+                            >css</a
+                          >
+                        </li>
+                        <li class="list-unstyled me-2">
+                          <a
+                            href="#"
+                            class="project-tech d-flex justify-content-center align-items-center"
+                            >Javascript</a
+                          >
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="visit-project">
+                      <a
+                        href="https://manojpatil10.github.io/Hospital/"
+                        target="_blank"
+                        class="m-xl-0 d-flex align-items-center"
+                        >view live project
+                        <div class="project-icon-box ms-2">
+                          <i class="bi bi-arrow-right icon-first"></i>
+                          <i class="bi bi-arrow-right icon-second"></i>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="react-projects mt-5">
+              <h2 class="project-section">Reactjs Projects</h2>
+              <div class="owl-carousel owl-theme project-slider">
+                <div class="item projectDiv">
+                  <div class="projectDiv-img mb-3">
+                    <img
+                      src="./Images/illustration/Screenshot (21).png"
+                      alt="Todo List"
+                      class="w-100"
+                    />
+                  </div>
+                  <div class="project-details">
+                    <h2>Todo List</h2>
+                    <p>
+                      A To-Do List project in React.js allows users to add, mark
+                      as complete, and delete tasks. It features dynamic task
+                      management with state handling and a clean, interactive
+                      user interface.
+                    </p>
+                    <div class="project-technologies mb-4">
+                      <ul class="m-0 p-0 d-flex flex-wrap">
+                        <li class="list-unstyled me-2">
+                          <a
+                            href="#"
+                            class="project-tech d-flex justify-content-center align-items-center"
+                            >html</a
+                          >
+                        </li>
+                        <li class="list-unstyled me-2">
+                          <a
+                            href="#"
+                            class="project-tech d-flex justify-content-center align-items-center"
+                            >css</a
+                          >
+                        </li>
+                        <li class="list-unstyled me-2">
+                          <a
+                            href="#"
+                            class="project-tech d-flex justify-content-center align-items-center"
+                            >Javascript</a
+                          >
+                        </li>
+                        <li class="list-unstyled me-2">
+                          <a
+                            href="#"
+                            class="project-tech d-flex justify-content-center align-items-center"
+                            >reactjs</a
+                          >
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="visit-project">
+                      <a href="#" class="m-xl-0 d-flex align-items-center"
+                        >view live project
+                        <div class="project-icon-box ms-2">
+                          <i class="bi bi-arrow-right icon-first"></i>
+                          <i class="bi bi-arrow-right icon-second"></i>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="item projectDiv">
+                  <div class="projectDiv-img mb-3">
+                    <img
+                      src="./Images/illustration/Screenshot (22).png"
+                      alt="Weather web app"
+                      class="w-100"
+                    />
+                  </div>
+                  <div class="project-details">
+                    <h2>Weather web app</h2>
+                    <p>
+                      A Weather App allows users to check the current weather
+                      and forecast for any location by fetching data from a
+                      weather API. It displays information such as temperature,
+                      humidity, wind speed, and weather conditions in a
+                      user-friendly interface.
+                    </p>
+                    <div class="project-technologies mb-4">
+                      <ul class="m-0 p-0 d-flex flex-wrap">
+                        <li class="list-unstyled me-2">
+                          <a
+                            href="#"
+                            class="project-tech d-flex justify-content-center align-items-center"
+                            >html</a
+                          >
+                        </li>
+                        <li class="list-unstyled me-2">
+                          <a
+                            href="#"
+                            class="project-tech d-flex justify-content-center align-items-center"
+                            >css</a
+                          >
+                        </li>
+                        <li class="list-unstyled me-2">
+                          <a
+                            href="#"
+                            class="project-tech d-flex justify-content-center align-items-center"
+                            >Javascript</a
+                          >
+                        </li>
+                        <li class="list-unstyled me-2">
+                          <a
+                            href="#"
+                            class="project-tech d-flex justify-content-center align-items-center"
+                            >reactjs</a
+                          >
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="visit-project">
+                      <a href="#" class="m-xl-0 d-flex align-items-center"
+                        >view live project
+                        <div class="project-icon-box ms-2">
+                          <i class="bi bi-arrow-right icon-first"></i>
+                          <i class="bi bi-arrow-right icon-second"></i>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="item projectDiv">
+                  <div class="projectDiv-img mb-3">
+                    <img
+                      src="./Images/illustration/Screenshot (5).png"
+                      alt="Weather web app"
+                      class="w-100"
+                    />
+                  </div>
+                  <div class="project-details">
+                    <h2>StudentHive</h2>
+                    <p>
+                      A student data management system where students input
+                      their details and marks, which are stored in a table.
+                      Progress can be viewed in an animated format using "Show"
+                      and "Hide" buttons for individual students.
+                    </p>
+                    <div class="project-technologies mb-4">
+                      <ul class="m-0 p-0 d-flex flex-wrap">
+                        <li class="list-unstyled me-2">
+                          <a
+                            href="#"
+                            class="project-tech d-flex justify-content-center align-items-center"
+                            >html</a
+                          >
+                        </li>
+                        <li class="list-unstyled me-2">
+                          <a
+                            href="#"
+                            class="project-tech d-flex justify-content-center align-items-center"
+                            >css</a
+                          >
+                        </li>
+                        <li class="list-unstyled me-2">
+                          <a
+                            href="#"
+                            class="project-tech d-flex justify-content-center align-items-center"
+                            >Javascript</a
+                          >
+                        </li>
+                        <li class="list-unstyled me-2">
+                          <a
+                            href="#"
+                            class="project-tech d-flex justify-content-center align-items-center"
+                            >reactjs</a
+                          >
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="visit-project">
+                      <a href="#" class="m-xl-0 d-flex align-items-center"
+                        >view live project
+                        <div class="project-icon-box ms-2">
+                          <i class="bi bi-arrow-right icon-first"></i>
+                          <i class="bi bi-arrow-right icon-second"></i>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="new-resume" id="portfolio">
+          <div class="container">
+            <div class="skills-header text-center">
+              <h2 class="section-title">my resume</h2>
+            </div>
+            <div class="mb-5 d-flex justify-content-center flex-wrap">
+              <ul class="m-0 portfolio-ul d-flex flex-wrap">
+                <li class="list-unstyled">
+                  <button
+                    onclick="showEducation()"
+                    class="education-btn1 edu-btn"
+                  >
+                    education
+                  </button>
+                </li>
+                <li class="list-unstyled">
+                  <button onclick="showSkills()" class="skills-btn1">
+                    skills
+                  </button>
+                </li>
+                <li class="list-unstyled">
+                  <button onclick="showExperience()" class="experience-btn1">
+                    experience
+                  </button>
+                </li>
+              </ul>
+            </div>
+            <div class="resume-content">
+              <div class="education-div">
+                <div class="row">
+                  <div class="col-12 col-md-6 pe-md-5 mb-5 mb-md-0">
+                    <span class="subtitle">2017 - 2024</span>
+                    <h4 class="main-title">education quality</h4>
+                    <div class="education-list-outer">
+                      <div class="education-list">
+                        <div class="education-heading pb-3 mb-3">
+                          <div class="edu-title mb-3">
+                            <h4 class="list-title">B.E. in Computer Science</h4>
+                            <span class="list-subtitle"
+                              >SITRC, Nashik (2020 - 2024)</span
+                            >
+                          </div>
+                          <div class="percentage">
+                            <span>8.10 / 10</span>
+                          </div>
+                        </div>
+                        <p class="edu-desc">
+                          Graduated with a Bachelor's degree in Computer Science
+                          from Sandip Institute of Technology & Research Center,
+                          Nashik, achieving a CGPA of 8.10.
+                        </p>
+                      </div>
+                      <div class="education-list">
+                        <div class="education-heading pb-3 mb-3">
+                          <div class="edu-title mb-3">
+                            <h4 class="list-title">Higher secondary college</h4>
+                            <span class="list-subtitle"
+                              >Pankaj sec. & higher sec. college, Chopda (2019 -
+                              2020)</span
+                            >
+                          </div>
+                          <div class="percentage">
+                            <span>71 / 100</span>
+                          </div>
+                        </div>
+                        <p class="edu-desc">
+                          Completed my higher secondary education from Pankaj
+                          secondary and higher secondary college, Chopda in
+                          science stream securing 71 percentage.
+                        </p>
+                      </div>
+                      <div class="education-list">
+                        <div class="education-heading pb-3 mb-3">
+                          <div class="edu-title mb-3">
+                            <h4 class="list-title">Secondary school</h4>
+                            <span class="list-subtitle"
+                              >Pratap vidya mandir, chopda (2017 - 2018)</span
+                            >
+                          </div>
+                          <div class="percentage">
+                            <span>85 / 100</span>
+                          </div>
+                        </div>
+                        <p class="edu-desc">
+                          Completed my secondary education from Pratap Vidya
+                          Mandir, Chopda securing 85 percentage.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 col-md-6">
+                    <span class="subtitle">2023 - 2024</span>
+                    <h4 class="main-title">interships</h4>
+                    <div class="education-list-outer">
+                      <div class="education-list">
+                        <div class="education-heading pb-3 mb-3">
+                          <div class="edu-title mb-3">
+                            <h4 class="list-title">
+                              Web Development & designing
+                            </h4>
+                            <span class="list-subtitle"
+                              >Oasis infobyte (Mar 2024 - April 2024)</span
+                            >
+                          </div>
+                          <div class="d-flex align-items-center flex-wrap">
+                            <div class="percentage mx-1 mb-2">
+                              <span>HTML</span>
+                            </div>
+                            <div class="percentage mx-1 mb-2">
+                              <span>CSS</span>
+                            </div>
+                            <div class="percentage mx-1 mb-2">
+                              <span>JavaScript</span>
+                            </div>
+                          </div>
+                        </div>
+                        <p class="edu-desc">
+                          Developed and maintained websites using HTML, CSS and
+                          JavaSCript. Created projects like Todo app,
+                          Calculator, Login page etc.
+                          <!-- <ul class="p-0 m-0">
+                              <li></li>
+                              <li></li>
+                            </ul> -->
+                        </p>
+                      </div>
+                      <div class="education-list">
+                        <div class="education-heading pb-3 mb-3">
+                          <div class="edu-title mb-3">
+                            <h4 class="list-title">Web Development Intern</h4>
+                            <span class="list-subtitle"
+                              >CodeClause PVT LTD (June 2024 - July 2024)</span
+                            >
+                          </div>
+                          <div class="d-flex align-items-center flex-wrap">
+                            <div class="percentage mx-1 mb-2">
+                              <span>HTML</span>
+                            </div>
+                            <div class="percentage mx-1 mb-2">
+                              <span>CSS</span>
+                            </div>
+                            <div class="percentage mx-1 mb-2">
+                              <span>JavaScript</span>
+                            </div>
+                          </div>
+                        </div>
+                        <p class="edu-desc">
+                          Explored new technologies and approches to streamline
+                          processes. Created projects like snake game, hospital
+                          website, simon game etc.
+                          <!-- <ul class="m-0 p-0">
+                              <li></li>
+                              <li></li>
+                            </ul> -->
+                        </p>
+                      </div>
+                      <div class="education-list">
+                        <div class="education-heading pb-3 mb-3">
+                          <div class="edu-title mb-3">
+                            <h4 class="list-title">MERN stack Developer</h4>
+                            <span class="list-subtitle"
+                              >TechFusion Institute(June 2024 - Present)</span
+                            >
+                          </div>
+                          <div class="d-flex align-items-center">
+                            <div class="percentage mx-1">
+                              <span>MERN stack</span>
+                            </div>
+                          </div>
+                        </div>
+                        <p class="edu-desc">
+                          Currently gaining hands-on experince in MERN stack web
+                          development. Learning to build dynamic front-end
+                          interfaces with ReactJs and manage back-end operations
+                          using Node.js and Express.js
+                          <!-- <p></p>
+                            <ul class="m-0 p-0">
+                              <li></li>
+                              <li></li>
+                            </ul> -->
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="programming-skills">
+                <div class="row programming-skills-inner">
+                  <div class="col-12 col-md-6 mb-4">
+                    <span class="subtitle">Features</span>
+                    <h4 class="main-title">Programming skills</h4>
+                    <div class="skill-bars">
+                      <div class="bar">
+                        <div class="info d-flex align-items-center">
+                          <img
+                            src="Images/illustration/js.svg"
+                            alt="Javascript-img"
+                            class="skill-img me-2 mb-0"
+                          />
+                          <span>JavaScript</span>
+                        </div>
+                        <div class="progress-line javascript">
+                          <span></span>
+                        </div>
+                      </div>
+                      <div class="bar">
+                        <div class="info d-flex align-items-center">
+                          <img
+                            src="Images/illustration/nodejs.svg"
+                            alt="node-img"
+                            class="skill-img me-2 mb-0"
+                          />
+                          <span>Node.js</span>
+                        </div>
+                        <div class="progress-line node">
+                          <span></span>
+                        </div>
+                      </div>
+                      <div class="bar">
+                        <div class="info d-flex align-items-center">
+                          <img
+                            src="Images/illustration/mongodb.svg"
+                            alt="mongodb-img"
+                            class="skill-img me-2 mb-0"
+                          />
+                          <span>MongoDB</span>
+                        </div>
+                        <div class="progress-line mongodb">
+                          <span></span>
+                        </div>
+                      </div>
+                      <div class="bar">
+                        <div class="info d-flex align-items-center">
+                          <img
+                            src="Images/illustration/expressjs.png"
+                            alt="express-img"
+                            class="skill-img me-2 mb-0"
+                          />
+                          <span>ExpressJs</span>
+                        </div>
+                        <div class="progress-line express">
+                          <span></span>
+                        </div>
+                      </div>
+                      <div class="bar">
+                        <div class="info">
+                          <img
+                            src="Images/illustration//sql.png"
+                            alt="sql-img"
+                            class="skill-img me-2 mb-0"
+                          />
+                          <span>SQL</span>
+                        </div>
+                        <div class="progress-line sql">
+                          <span></span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 col-md-6 mb-4">
+                    <span class="subtitle">Features</span>
+                    <h4 class="main-title">Development skills</h4>
+                    <div class="skill-bars">
+                      <div class="bar">
+                        <div class="info d-flex align-items-center">
+                          <img
+                            src="Images/illustration/html.svg"
+                            alt="HTML-img"
+                            class="skill-img me-2 mb-0"
+                          />
+                          <span>HTML</span>
+                        </div>
+                        <div class="progress-line html">
+                          <span></span>
+                        </div>
+                      </div>
+                      <div class="bar">
+                        <div class="info d-flex align-items-center">
+                          <img
+                            src="Images/illustration/css.svg"
+                            alt="css-img"
+                            class="skill-img me-2 mb-0"
+                          />
+                          <span>CSS</span>
+                        </div>
+                        <div class="progress-line css">
+                          <span></span>
+                        </div>
+                      </div>
+                      <div class="bar">
+                        <div class="info d-flex align-items-center">
+                          <img
+                            src="Images/illustration/bootstrap.svg"
+                            alt="Bootstrap-img"
+                            class="skill-img me-2 mb-0"
+                          />
+                          <span>Bootstrap</span>
+                        </div>
+                        <div class="progress-line bootstrap">
+                          <span></span>
+                        </div>
+                      </div>
+                      <div class="bar">
+                        <div class="info d-flex align-items-center">
+                          <img
+                            src="Images/illustration/jquery.svg"
+                            alt="Jquery-img"
+                            class="skill-img me-2 mb-0"
+                          />
+                          <span>jQuery</span>
+                        </div>
+                        <div class="progress-line jquery">
+                          <span></span>
+                        </div>
+                      </div>
+                      <div class="bar">
+                        <div class="info">
+                          <img
+                            src="Images/illustration/react.svg"
+                            alt="React-img"
+                            class="skill-img me-2 mb-0"
+                          />
+                          <span>React.js</span>
+                        </div>
+                        <div class="progress-line react">
+                          <span></span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="experience-div">
+                <div class="row">
+                  <div class="col-12 col-md-6 pe-md-5 mb-4">
+                    <span class="subtitle">2023 - 2024</span>
+                    <h4 class="main-title">interships</h4>
+                    <div class="education-list-outer">
+                      <div class="education-list">
+                        <div class="education-heading pb-3 mb-3">
+                          <div class="edu-title mb-3">
+                            <h4 class="list-title">
+                              Web Development & designing
+                            </h4>
+                            <span class="list-subtitle"
+                              >Oasis infobyte (Mar 2024 - April 2024)</span
+                            >
+                          </div>
+                          <div class="d-flex align-items-center flex-wrap">
+                            <div class="percentage mx-1 mb-2">
+                              <span>HTML</span>
+                            </div>
+                            <div class="percentage mx-1 mb-2">
+                              <span>CSS</span>
+                            </div>
+                            <div class="percentage mx-1 mb-2">
+                              <span>JavaScript</span>
+                            </div>
+                          </div>
+                        </div>
+                        <p class="edu-desc">
+                          Developed and maintained websites using HTML, CSS and
+                          JavaSCript. Created projects like Todo app,
+                          Calculator, Login page etc.
+                        </p>
+                      </div>
+                      <div class="education-list">
+                        <div class="education-heading pb-3 mb-3">
+                          <div class="edu-title mb-3">
+                            <h4 class="list-title">Web Development Intern</h4>
+                            <span class="list-subtitle"
+                              >CodeClause PVT LTD (June 2024 - July 2024)</span
+                            >
+                          </div>
+                          <div class="d-flex align-items-center flex-wrap">
+                            <div class="percentage mx-1 mb-2">
+                              <span>HTML</span>
+                            </div>
+                            <div class="percentage mx-1 mb-2">
+                              <span>CSS</span>
+                            </div>
+                            <div class="percentage mx-1 mb-2">
+                              <span>JavaScript</span>
+                            </div>
+                          </div>
+                        </div>
+                        <p class="edu-desc">
+                          Explored new technologies and approches to streamline
+                          processes. Created projects like snake game, hospital
+                          website, simon game etc.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 col-md-6">
+                    <span class="subtitle">2024 - Present</span>
+                    <h4 class="main-title">Training</h4>
+                    <div class="education-list-outer">
+                      <div class="education-list">
+                        <div class="education-heading pb-3 mb-3">
+                          <div class="edu-title mb-3">
+                            <h4 class="list-title">MERN stack Developer</h4>
+                            <span class="list-subtitle"
+                              >TechFusion Institute(June 2024 - Present)</span
+                            >
+                          </div>
+                          <div class="d-flex align-items-center">
+                            <div class="percentage mx-1">
+                              <span>MERN stack</span>
+                            </div>
+                          </div>
+                        </div>
+                        <p class="edu-desc">
+                          Currently gaining hands-on experince in MERN stack web
+                          development. Learning to build dynamic front-end
+                          interfaces with ReactJs and manage back-end operations
+                          using Node.js and Express.js
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="contact-section" id="contact">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-6 col-xl-5 offset-xl-1 order-1 order-lg-2 d-flex align-items-center">
+                <div>
+                  <div class="contact-header mb-5">
+                    <h2>Let's work together!</h2>
+                    <p>
+                      I design and code beautifully simple things and i love
+                      what i do. Just simple like that!
+                    </p>
+                  </div>
+                  <div class="contact-info-list">
+                    <ul class="p-0">
+                      <li
+                        class="list-unstyled d-flex align-items-center flex-wrap"
+                      >
+                        <div
+                          class="icon-box d-flex align-items-center justify-content-center me-4"
+                        >
+                          <i class="fa-solid fa-phone-volume"></i>
+                        </div>
+                        <div class="text-box">
+                          <p>phone</p>
+                          <a href="#">+91 7083260649</a>
+                        </div>
+                      </li>
+                      <li
+                        class="list-unstyled d-flex align-items-center flex-wrap"
+                      >
+                        <div
+                          class="icon-box d-flex align-items-center justify-content-center me-4"
+                        >
+                          <i class="fa-regular fa-envelope"></i>
+                        </div>
+                        <div class="text-box">
+                          <p>email</p>
+                          <a href="#">manojrpatil1000@gmail.com</a>
+                        </div>
+                      </li>
+                      <li
+                        class="list-unstyled d-flex align-items-center flex-wrap"
+                      >
+                        <div
+                          class="icon-box d-flex align-items-center justify-content-center me-4"
+                        >
+                          <i class="fa-solid fa-location-dot"></i>
+                        </div>
+                        <div class="text-box">
+                          <p>address</p>
+                          <a href="#" class="d-flex flex-wrap"
+                            >Sadashiv Peth, Pune, Maharashtra</a
+                          >
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-6 order-2 order-lg-1">
+                <div class="contact-form-div">
+                  <form class="contact-form needs-validation">
+                    <div class="row">
+                      <div class="col-sm-6">
+                        <div class="form-input mb-3">
+                          <input
+                            type="text"
+                            placeholder="First Name"
+                            required
+                          />
+                          <div class="invalid-feedback">
+                            Please fill out this field.
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-sm-6">
+                        <div class="form-input mb-3">
+                          <input type="text" placeholder="Last Name" required />
+                          <div class="invalid-feedback">
+                            Please fill out this field.
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-sm-6">
+                        <div class="form-input mb-3">
+                          <input
+                            type="tel"
+                            placeholder="Phone Number"
+                            required
+                          />
+                          <div class="invalid-feedback">
+                            Please fill out this field.
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-sm-6">
+                        <div class="form-input mb-3">
+                          <input type="email" placeholder="Email" required />
+                          <div class="invalid-feedback">
+                            Please fill out this field.
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-12">
+                        <div class="form-input mb-3">
+                          <input type="text" placeholder="Subject" required />
+                          <div class="invalid-feedback">
+                            Please fill out this field.
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-12">
+                        <div class="form-input mb-3">
+                          <textarea
+                            name="message"
+                            id="message"
+                            placeholder="Message"
+                            required
+                          ></textarea>
+                          <div class="invalid-feedback">
+                            Please fill out this field.
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-12">
+                        <div class="form-btn">
+                          <button
+                            type="submit"
+                            class="submit-btn"
+                            onclick="audioPlay()"
+                          >
+                            send message
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <footer>
+        <section class="footer">
+          <div class="container">
+            <div class="footer-contact">
+              <ul class="p-0 m-0 d-flex justify-content-center gap-3">
+                <li class="list-unstyled">
+                  <a
+                    href="https://www.linkedin.com/in/manojpatil10/"
+                    target="_blank"
+                    class="social-icons"
+                    ><i class="bi bi-linkedin social-i"></i>
+                    <span class="social-icon-span"></span>
+                  </a>
+                </li>
+                <li class="list-unstyled">
+                  <a
+                    href="https://github.com/Manojpatil10"
+                    target="_blank"
+                    class="social-icons"
+                    ><i class="bi bi-github social-i"></i>
+                    <span class="social-icon-span"></span>
+                  </a>
+                </li>
+                <li class="list-unstyled">
+                  <a
+                    href="https://www.hackerrank.com/profile/manojrpatil1000"
+                    target="_blank"
+                    class="social-icons"
+                    ><i class="fa-brands fa-hackerrank social-i social-i2"></i>
+                    <span class="social-icon-span"></span>
+                  </a>
+                </li>
+                <li class="list-unstyled">
+                  <a
+                    href="https://profile.indeed.com/p/manojp-9pxynph"
+                    class="social-icons"
+                    target="_blank"
+                    title="Indeed"
+                    class="d-flex justify-content-center align-items-center"
+                  >
+                    <img
+                      src="Images/illustration/icons8-indeed.svg"
+                      alt="Indeed Img"
+                      class="indeed-img"
+                    />
+                    <img
+                      src="Images/illustration/icons8-indeed(1).svg"
+                      alt="Indeed Img"
+                      class="indeed-img1"
+                    />
+                    <!-- <i class="bi bi-dribbble social-i"></i> -->
+                    <span class="social-icon-span"></span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="footer-logo-div d-flex justify-content-center">
+              <a href="index.html" class="d-inline-block">
+                <img
+                  src="Images/illustration/Logo.png"
+                  alt="Logo"
+                  class="header-logo footer-logo"
+                />
+              </a>
+            </div>
+            <div class="footer-menu">
+              <ul class="p-0 m-0 d-flex justify-content-center flex-wrap gap-3">
+                <li class="list-unstyled mb-2">
+                  <a href="#header">about</a>
+                </li>
+                <li class="list-unstyled mb-2">
+                  <a href="#services">services</a>
+                </li>
+                <li class="list-unstyled mb-2">
+                  <a href="#portfolio">portfolio</a>
+                </li>
+                <li class="list-unstyled mb-2">
+                  <a href="#contact">contact</a>
+                </li>
+              </ul>
+            </div>
+            <div class="copy-text pt-4 text-center">
+              <p>
+                Copyright &copy; Manoj Patil 2024 - 2025 All rights reserved
+              </p>
+            </div>
+          </div>
+        </section>
+      </footer>
+    </section>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+      integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="Javascript/script.js" defer></script>
+  </body>
+</html>
