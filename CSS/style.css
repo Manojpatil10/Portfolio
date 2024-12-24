@@ -507,6 +507,7 @@ html {
   padding: 80px 0;
   background-color: #050709;
   position: relative;
+  overflow: hidden;
 }
 .services::before {
   content: "";
