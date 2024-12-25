@@ -99,7 +99,7 @@ window.onload = scrollPercentage;
 // loader
 setTimeout(function () {
   document.querySelector(".loading").style.display = "none";
-}, 3000);
+}, 1000);
 
 //scroll navbar
 function scrollFunction() {

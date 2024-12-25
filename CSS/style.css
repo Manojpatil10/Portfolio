@@ -136,7 +136,7 @@ html {
   overflow: hidden;
   position: fixed;
   left: 0;
-  top: 90px;
+  top: 80px;
   width: 100%;
   min-height: 90vh;
   /* overflow-y: auto; */
@@ -162,7 +162,7 @@ html {
   background-color: var(--color1);
 }
 .nav-bar {
-  padding: 20px 0;
+  padding: 10px 0;
   background-color: transparent;
   position: absolute;
   z-index: 99;
