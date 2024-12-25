@@ -4,47 +4,107 @@ document.addEventListener("DOMContentLoaded", function (event) {
   elm.style.display = "block";
 });
 
-//menu-nav
 $(document).ready(function () {
-  $(".cancel-icon").hide();
-  // $(".mobile-nav").css("display","none");
-  $(".mobile-nav").css("display", "none");
 
-  $(".menu-icon").click(function () {
-    $(".menu-icon").hide(100);
-    $(".cancel-icon").show(100);
-    $(".mobile-nav").css("display", "block");
-  });
-  $(".cancel-icon").click(function () {
-    $(".cancel-icon").hide(100);
-    $(".menu-icon").show(100);
-    $(".mobile-nav").css("display", "none");
+  //menu-nav
+
+  $('.menu-icon').click(function(){
+    $('.mobile-nav').slideToggle(1000);
+  })
+  
+  $('.hero-anchor').click(function(){
+    $('.mobile-nav').slideUp(1000);
+  })
+
+  $('.portfolio-anchor').click(function(){
+    $('.mobile-nav').slideUp(1000);
+  })
+
+  $('.services-anchor').click(function(){
+    $('.mobile-nav').slideUp(1000);
+  })
+
+  $('.project-anchor').click(function(){
+    $('.mobile-nav').slideUp(1000);
+  })
+
+  $('.contact-anchor').click(function(){
+    $('.mobile-nav').slideUp(1000);
+  })
+
+  // $(".cancel-icon").hide();
+  // $(".mobile-nav").css("display", "none");
+
+  // $(".menu-icon").click(function () {
+  //   $(".menu-icon").hide(100);
+  //   $(".cancel-icon").show(100);
+  //   $(".mobile-nav").css("display", "block");
+  // });
+  // $(".cancel-icon").click(function () {
+  //   $(".cancel-icon").hide(100);
+  //   $(".menu-icon").show(100);
+  //   $(".mobile-nav").css("display", "none");
+  // });
+
+  // $(".hero-anchor").click(function () {
+  //   $(".mobile-nav").css("display", "none");
+  //   $(".cancel-icon").hide(100);
+  //   $(".menu-icon").show(100);
+  // });
+  // $(".portfolio-anchor").click(function () {
+  //   $(".mobile-nav").css("display", "none");
+  //   $(".cancel-icon").hide(100);
+  //   $(".menu-icon").show(100);
+  // });
+  // $(".services-anchor").click(function () {
+  //   $(".mobile-nav").css("display", "none");
+  //   $(".cancel-icon").hide(100);
+  //   $(".menu-icon").show(100);
+  // });
+  // $(".contact-anchor").click(function () {
+  //   $(".mobile-nav").css("display", "none");
+  //   $(".cancel-icon").hide(100);
+  //   $(".menu-icon").show(100);
+  // });
+  // $(".project-anchor").click(function () {
+  //   $(".mobile-nav").css("display", "none");
+  //   $(".cancel-icon").hide(100);
+  //   $(".menu-icon").show(100);
+  // });
+
+
+
+
+
+
+
+
+
+
+
+  $(".image-slider").owlCarousel({
+    items: 1,
+    dots: true,
+    autoplay: true,
+    loop: true,
   });
 
-  $(".hero-anchor").click(function () {
-    $(".mobile-nav").css("display", "none");
-    $(".cancel-icon").hide(100);
-    $(".menu-icon").show(100);
+  $(".project-slider").owlCarousel({
+    items: 1,
+    dots: true,
+    autoplay: true,
+    loop: true,
+    margin:20,
+    responsive: {
+      768: { items: 2 }, 
+      1200: { items: 3 }, 
+    },
   });
-  $(".portfolio-anchor").click(function () {
-    $(".mobile-nav").css("display", "none");
-    $(".cancel-icon").hide(100);
-    $(".menu-icon").show(100);
-  });
-  $(".services-anchor").click(function () {
-    $(".mobile-nav").css("display", "none");
-    $(".cancel-icon").hide(100);
-    $(".menu-icon").show(100);
-  });
-  $(".contact-anchor").click(function () {
-    $(".mobile-nav").css("display", "none");
-    $(".cancel-icon").hide(100);
-    $(".menu-icon").show(100);
-  });
-  $(".project-anchor").click(function () {
-    $(".mobile-nav").css("display", "none");
-    $(".cancel-icon").hide(100);
-    $(".menu-icon").show(100);
+
+  $(".more-projects").hide();
+  
+  $(".all-projects").click(function(){
+    $(".more-projects").slideToggle("slow");
   });
 });
 
@@ -216,29 +276,4 @@ function showExperience() {
   experienceBtn.style.backgroundColor = "#050709";
 }
 
-$(document).ready(function () {
-  $(".image-slider").owlCarousel({
-    items: 1,
-    dots: true,
-    autoplay: true,
-    loop: true,
-  });
 
-  $(".project-slider").owlCarousel({
-    items: 1,
-    dots: true,
-    autoplay: true,
-    loop: true,
-    margin:20,
-    responsive: {
-      768: { items: 2 }, 
-      1200: { items: 3 }, 
-    },
-  });
-
-  $(".more-projects").hide();
-  
-  $(".all-projects").click(function(){
-    $(".more-projects").slideToggle("slow");
-  });
-});
