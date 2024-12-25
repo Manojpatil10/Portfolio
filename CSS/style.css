@@ -2,8 +2,8 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  /* scrollbar-width: thin; */
-  /* scrollbar-color: var(--color4) #2a1454; */
+  scrollbar-width: thin;
+  scrollbar-color: var(--color4) #2a1454;
 }
 html {
   scroll-behavior: smooth;
@@ -1360,6 +1360,75 @@ html {
   .text-box a{
     font-size: 20px;
   }
+  .hero-section::before {
+  content: "";
+  position: absolute;
+  top: -300px;
+  left: 145px;
+  transform: translate(-50%);
+  width: 552px;
+  height: 552px;
+  border-radius: 50%;
+  background: linear-gradient(260deg, #7343d2 0%, rgba(115, 67, 210, 0.1) 100%);
+  opacity: 0.6;
+  z-index: 2;
+  filter: blur(1000px);
+}
+.services::before {
+  content: "";
+  position: absolute;
+  bottom: -380px;
+  right: 0px;
+  width: 500px;
+  height: 500px;
+  border-radius: 50%;
+  background: linear-gradient(
+    260deg,
+    var(--color4) 0%,
+    rgba(115, 67, 210, 0) 100%
+  );
+  filter: blur(150px);
+  opacity: 0.6;
+  z-index: 1;
+}
+.new-resume::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 650px;
+  height: 550px;
+  border-radius: 50%;
+  background: linear-gradient(
+    260deg,
+    var(--color4) 0%,
+    rgba(115, 67, 210, 0) 100%
+  );
+  filter: blur(150px);
+  margin-bottom: -6%;
+  opacity: 0.5;
+  overflow: hidden;
+}
+.footer::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 400px;
+  height: 450px;
+  border-radius: 50%;
+  background: linear-gradient(
+    260deg,
+    var(--color4) 0%,
+    rgba(115, 67, 210, 0) 100%
+  );
+  filter: blur(100px);
+  margin-left: -15%;
+  margin-top: 12%;
+  opacity: 0.6;
+  overflow: hidden;
+}
+
 }
 @media (min-width: 768px) {
   .hero-content-h1 {
