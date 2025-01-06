@@ -8,78 +8,29 @@ $(document).ready(function () {
 
   //menu-nav
 
-  $('.menu-icon').click(function(){
+  $('.menu-icon').click(function () {
     $('.mobile-nav').slideToggle(1000);
   })
-  
-  $('.hero-anchor').click(function(){
+
+  $('.hero-anchor').click(function () {
     $('.mobile-nav').slideUp(1000);
   })
 
-  $('.portfolio-anchor').click(function(){
+  $('.portfolio-anchor').click(function () {
     $('.mobile-nav').slideUp(1000);
   })
 
-  $('.services-anchor').click(function(){
+  $('.services-anchor').click(function () {
     $('.mobile-nav').slideUp(1000);
   })
 
-  $('.project-anchor').click(function(){
+  $('.project-anchor').click(function () {
     $('.mobile-nav').slideUp(1000);
   })
 
-  $('.contact-anchor').click(function(){
+  $('.contact-anchor').click(function () {
     $('.mobile-nav').slideUp(1000);
   })
-
-  // $(".cancel-icon").hide();
-  // $(".mobile-nav").css("display", "none");
-
-  // $(".menu-icon").click(function () {
-  //   $(".menu-icon").hide(100);
-  //   $(".cancel-icon").show(100);
-  //   $(".mobile-nav").css("display", "block");
-  // });
-  // $(".cancel-icon").click(function () {
-  //   $(".cancel-icon").hide(100);
-  //   $(".menu-icon").show(100);
-  //   $(".mobile-nav").css("display", "none");
-  // });
-
-  // $(".hero-anchor").click(function () {
-  //   $(".mobile-nav").css("display", "none");
-  //   $(".cancel-icon").hide(100);
-  //   $(".menu-icon").show(100);
-  // });
-  // $(".portfolio-anchor").click(function () {
-  //   $(".mobile-nav").css("display", "none");
-  //   $(".cancel-icon").hide(100);
-  //   $(".menu-icon").show(100);
-  // });
-  // $(".services-anchor").click(function () {
-  //   $(".mobile-nav").css("display", "none");
-  //   $(".cancel-icon").hide(100);
-  //   $(".menu-icon").show(100);
-  // });
-  // $(".contact-anchor").click(function () {
-  //   $(".mobile-nav").css("display", "none");
-  //   $(".cancel-icon").hide(100);
-  //   $(".menu-icon").show(100);
-  // });
-  // $(".project-anchor").click(function () {
-  //   $(".mobile-nav").css("display", "none");
-  //   $(".cancel-icon").hide(100);
-  //   $(".menu-icon").show(100);
-  // });
-
-
-
-
-
-
-
-
-
 
 
   $(".image-slider").owlCarousel({
@@ -94,16 +45,16 @@ $(document).ready(function () {
     dots: true,
     autoplay: true,
     loop: true,
-    margin:20,
+    margin: 20,
     responsive: {
-      768: { items: 2 }, 
-      1200: { items: 3 }, 
+      768: { items: 2 },
+      1200: { items: 3 },
     },
   });
 
   $(".more-projects").hide();
-  
-  $(".all-projects").click(function(){
+
+  $(".all-projects").click(function () {
     $(".more-projects").slideToggle("slow");
   });
 });
@@ -277,3 +228,68 @@ function showExperience() {
 }
 
 
+//contact form validations
+const contactForm = document.getElementById('contactForm');
+
+        contactForm.addEventListener('submit', function (event) {
+            event.preventDefault(); // Prevent default form submission
+
+            // Clear previous error messages
+            document.querySelectorAll('.error-message').forEach(msg => msg.textContent = '');
+
+            // Collect input values
+            const firstname = document.getElementById('firstname').value.trim();
+            const lastname = document.getElementById('lastname').value.trim();
+            const phone = document.getElementById('phone').value.trim();
+            const email = document.getElementById('email').value.trim();
+            const subject = document.getElementById('subject').value.trim();
+            const message = document.getElementById('message').value.trim();
+
+            let hasError = false;
+
+            // Validate First Name
+            if (firstname === '') {
+                document.getElementById('error-firstname').textContent = 'First Name is required.';
+                hasError = true;
+            }
+
+            // Validate Last Name
+            if (lastname === '') {
+                document.getElementById('error-lastname').textContent = 'Last Name is required.';
+                hasError = true;
+            }
+
+            // Validate Phone Number
+            if (!/^\d{10}$/.test(phone)) {
+                document.getElementById('error-phone').textContent = 'Phone Number must be 10 digits.';
+                hasError = true;
+            }
+
+            // Validate Email
+            if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
+                document.getElementById('error-email').textContent = 'Please enter a valid email address.';
+                hasError = true;
+            }
+
+            // Validate Subject
+            if (subject === '') {
+                document.getElementById('error-subject').textContent = 'Subject is required.';
+                hasError = true;
+            }
+
+            // Validate Message
+            if (message.length < 10) {
+                document.getElementById('error-message').textContent = 'Message must be at least 10 characters.';
+                hasError = true;
+            }
+
+            // Submit the form if no errors
+            if (!hasError) {
+                // Display the toast
+                const successToast = new bootstrap.Toast(document.getElementById('successToast'));
+                successToast.show();
+
+                // Optionally, reset the form
+                contactForm.reset();
+            }
+        });

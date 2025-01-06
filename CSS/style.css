@@ -1193,6 +1193,35 @@ html {
 .form-input textarea:focus {
   border: 2px solid var(--color4);
 }
+.error-message {
+  color: red;
+  font-size: 0.9em;
+  margin-top: 5px;
+}
+/* .toast-container {
+  position: fixed;
+  bottom: 1rem;
+  right: 1rem;
+  z-index: 1055;
+} */
+.custom-toast {
+  background-color: #8750f7 !important; 
+  color: #fff !important; 
+  border: none; 
+  font-size: 14px;
+  width: 280px !important;
+}
+
+.custom-toast .btn-close {
+  filter: invert(1); /* Invert close button color to match dark background */
+}
+
+.toast-container {
+  position: fixed;
+  bottom: 1rem;
+  right: 1rem;
+  z-index: 1055;
+}
 
 /* ---------------footer---------------- */
 .footer {
@@ -1422,8 +1451,14 @@ html {
   opacity: 0.6;
   overflow: hidden;
 }
+.toast-container{
+  font-size: 18px;
+  width: 350px !important;
+}
 
 }
+
+
 @media (min-width: 768px) {
   .hero-content-h1 {
     font-size: 38px;
