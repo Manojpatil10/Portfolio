@@ -206,12 +206,10 @@
           </div>
           <div class="container">
             <div class="row">
-              <div class="col-md-6 mt-lg-5">
+              <div class="col-md-6 mt-lg-5 d-flex justify-content-center">
                 <div class="hero-content-box">
                   <span class="hero-content-span">I am Manoj Patil</span>
                   <h1 class="hero-content-h1">
-                    <!-- web developer + <br />
-                      UX designer -->
                     MERN stack <br />
                     developer
                   </h1>
@@ -227,7 +225,6 @@
                       <span class="btn-span"></span>
                       <span>Portfolio</span>
                       <span>
-                        <!-- <i class="fa-solid fa-download btn-icon d-flex justify-content-center align-items-center"></i> -->
                         <i class="fa-solid fa-briefcase btn-icon d-flex justify-content-center align-items-center"></i>
                       </span>
                     </a>
@@ -255,7 +252,6 @@
                           title="Indeed" class="d-flex justify-content-center align-items-center">
                           <img src="Images/illustration/icons8-indeed.svg" alt="Indeed Img" class="indeed-img" />
                           <img src="Images/illustration/icons8-indeed(1).svg" alt="Indeed Img" class="indeed-img1" />
-                          <!-- <i class="bi bi-dribbble social-i"></i> -->
                           <span class="social-icon-span"></span>
                         </a>
                       </li>
@@ -266,7 +262,6 @@
               <div class="col-md-6 d-none d-md-block">
                 <div class="hero-img-div text-center">
                   <img src="Images/illustration/myPhoto3.png" alt="Image" class="hero-img" />
-                  <!-- <img src="Images/illustration/My_photo2.jpg.jpg" alt="Image" class="hero-img"> -->
                 </div>
               </div>
             </div>
@@ -398,26 +393,31 @@
                       <span class="mb-3">Full-stack</span>
                       <h3>StudentMaster</h3>
                     </div>
-                    <div class="project-desc mb-3">
-                      <p>
-                        A Student Management CRUD Web Application built with EJS, Express.js, Node.js, and MongoDB
-                        enables admins to efficiently manage student data. It allows users to Create, Read, Update, and
-                        Delete student records via a user-friendly interface. The application follows the MVC
-                        architecture and provides dynamic views, ensuring smooth data handling and scalability.
+                    <div class="project-desc">
+                      <p class="mb-0">
+                        A Student Management CRUD Web Application designed for efficient handling of student records,
+                        enabling admins to Create, Read, Update, and Delete data via an intuitive and dynamic interface.
+                        The application utilizes EJS for dynamic templating, alongside a robust backend powered by
+                        Express.js, Node.js, and MongoDB, and follows the MVC architecture for scalability and
+                        maintainability.
                       </p>
                     </div>
-                    <div class="project-feature mt-5">
-                      <span><i class="bi bi-check2 me-4"></i>Add new student records.</span>
-                      <span><i class="bi bi-check2 me-4"></i>Update existing student details.</span>
-                      <span><i class="bi bi-check2 me-4"></i>Delete unwanted student records.</span>
+                    <div class="project-feature mt-4">
+                      <span><i class="bi bi-check2 me-4"></i>A Comprehensive CRUD Operations.</span>
+                      <span><i class="bi bi-check2 me-4"></i>Dynamic and Interactive Views.</span>
+                      <span><i class="bi bi-check2 me-4"></i>Scalable Backend System.</span>
                     </div>
                     <div class="project-technologies">
                       <ul class="m-0 p-0 d-flex flex-wrap">
                         <li class="list-unstyled me-2">
-                          <a href="#" class="project-tech d-flex justify-content-center align-items-center">ejs</a>
+                          <a href="#" class="project-tech d-flex justify-content-center align-items-center">HTML5</a>
                         </li>
                         <li class="list-unstyled me-2">
-                          <a href="#" class="project-tech d-flex justify-content-center align-items-center">css</a>
+                          <a href="#" class="project-tech d-flex justify-content-center align-items-center">CSS3</a>
+                        </li>
+                        <li class="list-unstyled me-2">
+                          <a href="#"
+                            class="project-tech d-flex justify-content-center align-items-center">Bootstrap</a>
                         </li>
                         <li class="list-unstyled me-2">
                           <a href="#"
@@ -429,15 +429,20 @@
                         <li class="list-unstyled me-2">
                           <a href="#" class="project-tech d-flex justify-content-center align-items-center">mongodb</a>
                         </li>
+                        <li class="list-unstyled me-2">
+                          <a href="#" class="project-tech d-flex justify-content-center align-items-center">ejs</a>
+                        </li>
                       </ul>
                     </div>
                   </div>
-                  <div class="owl-carousel owl-theme image-slider col-lg-7">
-                    <div class="item project-img p-3">
-                      <img src="Images/illustration/Screenshot (23).png" alt="Project Image" class="w-100" />
-                    </div>
-                    <div class="item project-img p-3">
-                      <img src="Images/illustration/Screenshot (24).png" alt="Project Image" class="w-100" />
+                  <div class="col-lg-7">
+                    <div class="owl-carousel owl-theme image-slider w-100">
+                      <div class="item project-img p-3">
+                        <img src="Images/illustration/Screenshot (23).png" alt="Project Image" class="w-100" />
+                      </div>
+                      <div class="item project-img p-3">
+                        <img src="Images/illustration/Screenshot (24).png" alt="Project Image" class="w-100" />
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -459,30 +464,27 @@
                       <span class="mb-3">front-end</span>
                       <h3>TaskTrackr</h3>
                     </div>
-                    <div class="project-desc mb-3">
-                      <p>
-                        Task management system with login and signup
-                        functionality. Admins can assign tasks to specific
-                        employees and track progress, while employees can
-                        provide feedback to the admin, ensuring effective
-                        communication and task management.
+                    <div class="project-desc">
+                      <p class="mb-0">
+                        A Task Management System built with React.js and Redux enables role-based access for admins and
+                        employees, ensuring efficient task handling. Admins can assign tasks, track progress, and view
+                        status updates, while employees can update task completion and provide feedback. The system uses
+                        Axios for API integration and the React Charts Library for visualizing task progress, offering
+                        an intuitive and interactive experience.
                       </p>
                     </div>
-                    <div class="project-feature mt-5">
-                      <span><i class="bi bi-check2 me-4"></i>Login and Signup
-                        functionality.</span>
-                      <span><i class="bi bi-check2 me-4"></i>Task assignment by
-                        admin.</span>
-                      <span><i class="bi bi-check2 me-4"></i>Feedback submission
-                        by employees.</span>
+                    <div class="project-feature mt-4">
+                      <span><i class="bi bi-check2 me-4"></i>Role-Based Access Control.</span>
+                      <span><i class="bi bi-check2 me-4"></i>Real-Time Task Management.</span>
+                      <span><i class="bi bi-check2 me-4"></i>Visual Analytics.</span>
                     </div>
                     <div class="project-technologies">
                       <ul class="m-0 p-0 d-flex flex-wrap">
                         <li class="list-unstyled me-2">
-                          <a href="#" class="project-tech d-flex justify-content-center align-items-center">html</a>
+                          <a href="#" class="project-tech d-flex justify-content-center align-items-center">HTML5</a>
                         </li>
                         <li class="list-unstyled me-2">
-                          <a href="#" class="project-tech d-flex justify-content-center align-items-center">css</a>
+                          <a href="#" class="project-tech d-flex justify-content-center align-items-center">CSS3</a>
                         </li>
                         <li class="list-unstyled me-2">
                           <a href="#"
@@ -495,21 +497,29 @@
                         <li class="list-unstyled me-2">
                           <a href="#" class="project-tech d-flex justify-content-center align-items-center">ReactJs</a>
                         </li>
+                        <li class="list-unstyled me-2">
+                          <a href="#" class="project-tech d-flex justify-content-center align-items-center">Redux</a>
+                        </li>
+                        <li class="list-unstyled me-2">
+                          <a href="#" class="project-tech d-flex justify-content-center align-items-center">axios</a>
+                        </li>
                       </ul>
                     </div>
                   </div>
-                  <div class="owl-carousel owl-theme image-slider col-lg-7">
-                    <div class="item project-img p-3">
-                      <img src="Images/illustration/Screenshot (1).png" alt="Project Image" class="w-100" />
-                    </div>
-                    <div class="item project-img p-3">
-                      <img src="Images/illustration/Screenshot (2).png" alt="Project Image" class="w-100" />
-                    </div>
-                    <div class="item project-img p-3">
-                      <img src="Images/illustration/Screenshot (3).png" alt="Project Image" class="w-100" />
-                    </div>
-                    <div class="item project-img p-3">
-                      <img src="Images/illustration/Screenshot (4).png" alt="Project Image" class="w-100" />
+                  <div class="col-lg-7">
+                    <div class="owl-carousel owl-theme image-slider">
+                      <div class="item project-img p-3">
+                        <img src="Images/illustration/Screenshot (1).png" alt="Project Image" class="w-100" />
+                      </div>
+                      <div class="item project-img p-3">
+                        <img src="Images/illustration/Screenshot (2).png" alt="Project Image" class="w-100" />
+                      </div>
+                      <div class="item project-img p-3">
+                        <img src="Images/illustration/Screenshot (3).png" alt="Project Image" class="w-100" />
+                      </div>
+                      <div class="item project-img p-3">
+                        <img src="Images/illustration/Screenshot (4).png" alt="Project Image" class="w-100" />
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -532,30 +542,27 @@
                       <span class="mb-3">front-end</span>
                       <h3>GeoExplorer</h3>
                     </div>
-                    <div class="project-desc mb-3">
-                      <p>
-                        A user-friendly country information app that allows
-                        users to explore countries by region. Users can search
-                        for specific countries and access key details,
-                        including their capital, geographical boundaries,
-                        currency, population, and more.
+                    <div class="project-desc">
+                      <p class="mb-0">
+                        A Country Information App built with React.js and Bootstrap provides users with an intuitive
+                        platform to explore countries by region or search for specific ones. It offers detailed
+                        information, including the capital, boundaries, currency, and population, using Axios for
+                        real-time data fetching. The app integrates React Router DOM for smooth navigation, ensuring a
+                        seamless and engaging user experience.
                       </p>
                     </div>
-                    <div class="project-feature mt-5">
-                      <span><i class="bi bi-check2 me-4"></i>Search for countries
-                        by region.</span>
-                      <span><i class="bi bi-check2 me-4"></i>View basic details
-                        like capital and currency.</span>
-                      <span><i class="bi bi-check2 me-4"></i>Explore geographical
-                        boundaries.</span>
+                    <div class="project-feature mt-4">
+                      <span><i class="bi bi-check2 me-4"></i>Search and Filter.</span>
+                      <span><i class="bi bi-check2 me-4"></i>Comprehensive Details.</span>
+                      <span><i class="bi bi-check2 me-4"></i>Seamless Navigation.</span>
                     </div>
                     <div class="project-technologies">
                       <ul class="m-0 p-0 d-flex flex-wrap">
                         <li class="list-unstyled me-2">
-                          <a href="#" class="project-tech d-flex justify-content-center align-items-center">html</a>
+                          <a href="#" class="project-tech d-flex justify-content-center align-items-center">HTML5</a>
                         </li>
                         <li class="list-unstyled me-2">
-                          <a href="#" class="project-tech d-flex justify-content-center align-items-center">css</a>
+                          <a href="#" class="project-tech d-flex justify-content-center align-items-center">CSS3</a>
                         </li>
                         <li class="list-unstyled me-2">
                           <a href="#"
@@ -568,21 +575,30 @@
                         <li class="list-unstyled me-2">
                           <a href="#" class="project-tech d-flex justify-content-center align-items-center">ReactJs</a>
                         </li>
+                        <li class="list-unstyled me-2">
+                          <a href="#" class="project-tech d-flex justify-content-center align-items-center">Axios</a>
+                        </li>
+                        <li class="list-unstyled me-2">
+                          <a href="#" class="project-tech d-flex justify-content-center align-items-center">React
+                            Router</a>
+                        </li>
                       </ul>
                     </div>
                   </div>
-                  <div class="owl-carousel owl-theme image-slider col-lg-7">
-                    <div class="item project-img p-3">
-                      <img src="Images/illustration/Screenshot (6).png" alt="Project Image" class="w-100" />
-                    </div>
-                    <div class="item project-img p-3">
-                      <img src="Images/illustration/Screenshot (7).png" alt="Project Image" class="w-100" />
-                    </div>
-                    <div class="item project-img p-3">
-                      <img src="Images/illustration/Screenshot (8).png" alt="Project Image" class="w-100" />
-                    </div>
-                    <div class="item project-img p-3">
-                      <img src="Images/illustration/Screenshot (9).png" alt="Project Image" class="w-100" />
+                  <div class="col-lg-7">
+                    <div class="owl-carousel owl-theme image-slider">
+                      <div class="item project-img p-3">
+                        <img src="Images/illustration/Screenshot (6).png" alt="Project Image" class="w-100" />
+                      </div>
+                      <div class="item project-img p-3">
+                        <img src="Images/illustration/Screenshot (7).png" alt="Project Image" class="w-100" />
+                      </div>
+                      <div class="item project-img p-3">
+                        <img src="Images/illustration/Screenshot (8).png" alt="Project Image" class="w-100" />
+                      </div>
+                      <div class="item project-img p-3">
+                        <img src="Images/illustration/Screenshot (9).png" alt="Project Image" class="w-100" />
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -605,25 +621,27 @@
                       <span class="mb-3">front-end</span>
                       <h3>Christmas Offer page</h3>
                     </div>
-                    <div class="project-desc mb-3">
-                      <p>
-                        During my ongoing training at TechFusion Institute, I worked on a live project where I created a
-                        Christmas offer page for the institute's official website. I used HTML5, CSS3, JavaScript,
-                        Bootstrap, and jQuery to develop this page.
+                    <div class="project-desc">
+                      <p class="mb-0">
+                        During my ongoing training at TechFusion Institute, I developed a Christmas offer page for the
+                        institute's official website using key technologies like HTML5, CSS3, and JavaScript. The page
+                        was designed to showcase seasonal promotions with a responsive layout. I incorporated a canvas
+                        element to create a snow effect, enhancing the festive atmosphere. The page featured interactive
+                        elements and animations, ensuring a smooth, engaging user experience.
                       </p>
                     </div>
-                    <div class="project-feature mt-5">
-                      <span><i class="bi bi-check2 me-4"></i>Responsive Design</span>
-                      <span><i class="bi bi-check2 me-4"></i>Interactive Elements</span>
-                      <span><i class="bi bi-check2 me-4"></i>Festive Theme</span>
+                    <div class="project-feature mt-4">
+                      <span><i class="bi bi-check2 me-4"></i>Festive-Themed Design</span>
+                      <span><i class="bi bi-check2 me-4"></i>Interactive Canvas Effect</span>
+                      <span><i class="bi bi-check2 me-4"></i>Responsive and Interactive</span>
                     </div>
                     <div class="project-technologies">
                       <ul class="m-0 p-0 d-flex flex-wrap">
                         <li class="list-unstyled me-2">
-                          <a href="#" class="project-tech d-flex justify-content-center align-items-center">html</a>
+                          <a href="#" class="project-tech d-flex justify-content-center align-items-center">HTML5</a>
                         </li>
                         <li class="list-unstyled me-2">
-                          <a href="#" class="project-tech d-flex justify-content-center align-items-center">css</a>
+                          <a href="#" class="project-tech d-flex justify-content-center align-items-center">CSS3</a>
                         </li>
                         <li class="list-unstyled me-2">
                           <a href="#"
@@ -639,18 +657,20 @@
                       </ul>
                     </div>
                   </div>
-                  <div class="owl-carousel owl-theme image-slider col-lg-7">
-                    <div class="item project-img p-3">
-                      <img src="Images/illustration/Screenshot (25).png" alt="Project Image" class="w-100" />
-                    </div>
-                    <div class="item project-img p-3">
-                      <img src="Images/illustration/Screenshot (26).png" alt="Project Image" class="w-100" />
-                    </div>
-                    <div class="item project-img p-3">
-                      <img src="Images/illustration/Screenshot (27).png" alt="Project Image" class="w-100" />
-                    </div>
-                    <div class="item project-img p-3">
-                      <img src="Images/illustration/Screenshot (28).png" alt="Project Image" class="w-100" />
+                  <div class="col-lg-7">
+                    <div class="owl-carousel owl-theme image-slider">
+                      <div class="item project-img p-3">
+                        <img src="Images/illustration/Screenshot (25).png" alt="Project Image" class="w-100" />
+                      </div>
+                      <div class="item project-img p-3">
+                        <img src="Images/illustration/Screenshot (26).png" alt="Project Image" class="w-100" />
+                      </div>
+                      <div class="item project-img p-3">
+                        <img src="Images/illustration/Screenshot (27).png" alt="Project Image" class="w-100" />
+                      </div>
+                      <div class="item project-img p-3">
+                        <img src="Images/illustration/Screenshot (28).png" alt="Project Image" class="w-100" />
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -675,27 +695,21 @@
                     </div>
                     <div class="project-desc mb-3">
                       <p>
-                        A classic snake game built using HTML, CSS, and
-                        JavaScript. The game features smooth controls,
-                        increasing difficulty as the snake grows, and all the
-                        traditional functionalities of a classic snake game.
+                        A classic Snake Game Web Application built using HTML, CSS, and JavaScript, featuring smooth controls and increasing difficulty as the snake grows. It includes traditional mechanics like collecting food, avoiding collisions, and sound effects for an immersive experience. Players can also view their previous highest score, adding a competitive element to the game. The app provides seamless, interactive gameplay with dynamic visuals.
                       </p>
                     </div>
                     <div class="project-feature mt-5">
-                      <span><i class="bi bi-check2 me-4"></i>Dynamic gameplay
-                        with growing snake length.</span>
-                      <span><i class="bi bi-check2 me-4"></i>Keyboard controls
-                        for smooth movement.</span>
-                      <span><i class="bi bi-check2 me-4"></i>Score tracking to
-                        monitor progress.</span>
+                      <span><i class="bi bi-check2 me-4"></i>Responsive Controls.</span>
+                      <span><i class="bi bi-check2 me-4"></i>Progressive Difficulty.</span>
+                      <span><i class="bi bi-check2 me-4"></i>Score Tracking.</span>
                     </div>
                     <div class="project-technologies">
                       <ul class="m-0 p-0 d-flex flex-wrap">
                         <li class="list-unstyled me-2">
-                          <a href="#" class="project-tech d-flex justify-content-center align-items-center">html</a>
+                          <a href="#" class="project-tech d-flex justify-content-center align-items-center">HTML5</a>
                         </li>
                         <li class="list-unstyled me-2">
-                          <a href="#" class="project-tech d-flex justify-content-center align-items-center">css</a>
+                          <a href="#" class="project-tech d-flex justify-content-center align-items-center">CSS3</a>
                         </li>
                         <li class="list-unstyled me-2">
                           <a href="#"
@@ -727,7 +741,14 @@
             </div>
           </div>
           <div class="text-center mt-5">
-            <button class="all-projects">see all projects</button>
+            <button class="all-projects">
+              Explore all projects
+              <div class="chevron-div">
+                <div class="chevron"></div>
+                <div class="chevron"></div>
+                <div class="chevron"></div>
+              </div>
+            </button>
           </div>
         </div>
       </section>
@@ -744,23 +765,30 @@
                 <div class="project-details">
                   <h2>exhaust</h2>
                   <p>
-                    A Car Garage Website is a user-friendly platform that
-                    allows customers to book car services, explore service
-                    details, providing seamless access to automotive care.
+                    A Car Garage Website is a static, responsive platform built with core web development technologies like HTML5, CSS3 and JavaScript. The website utilizes libraries like Owl Carousel for smooth image transitions and AOS (Animate On Scroll) for engaging animations, offering a seamless and visually appealing experience across all devices.
                   </p>
                   <div class="project-technologies mb-4">
                     <ul class="m-0 p-0 d-flex flex-wrap">
                       <li class="list-unstyled me-2">
-                        <a href="#" class="project-tech d-flex justify-content-center align-items-center">html</a>
+                        <a href="#" class="project-tech tech d-flex justify-content-center align-items-center">HTML5</a>
                       </li>
                       <li class="list-unstyled me-2">
-                        <a href="#" class="project-tech d-flex justify-content-center align-items-center">css</a>
+                        <a href="#" class="project-tech tech d-flex justify-content-center align-items-center">CSS3</a>
                       </li>
                       <li class="list-unstyled me-2">
-                        <a href="#" class="project-tech d-flex justify-content-center align-items-center">bootstrap</a>
+                        <a href="#" class="project-tech tech d-flex justify-content-center align-items-center">bootstrap</a>
                       </li>
                       <li class="list-unstyled me-2">
-                        <a href="#" class="project-tech d-flex justify-content-center align-items-center">Javascript</a>
+                        <a href="#" class="project-tech tech d-flex justify-content-center align-items-center">Javascript</a>
+                      </li>
+                      <li class="list-unstyled me-2">
+                        <a href="#" class="project-tech tech d-flex justify-content-center align-items-center">jQuery</a>
+                      </li>
+                      <li class="list-unstyled me-2">
+                        <a href="#" class="project-tech tech d-flex justify-content-center align-items-center">owl-carousel</a>
+                      </li>
+                      <li class="list-unstyled me-2">
+                        <a href="#" class="project-tech tech d-flex justify-content-center align-items-center">AOS</a>
                       </li>
                     </ul>
                   </div>
@@ -782,24 +810,27 @@
                 <div class="project-details">
                   <h2>Restabook</h2>
                   <p>
-                    A Restaurant Website is an engaging platform that
-                    showcases the menu, allows table reservations, displays
-                    special offers, and provides contact details to enhance
-                    the dining experience and attract customers.
+                    A Restaurant Website is a static, responsive platform built using HTML5, CSS3, and JavaScript. With the use of libraries like Bootstrap for layout design and Owl Carousel for smooth image transitions, the website ensures an engaging and visually appealing experience across all devices.
                   </p>
                   <div class="project-technologies mb-4">
                     <ul class="m-0 p-0 d-flex flex-wrap">
                       <li class="list-unstyled me-2">
-                        <a href="#" class="project-tech d-flex justify-content-center align-items-center">html</a>
+                        <a href="#" class="project-tech tech d-flex justify-content-center align-items-center">html5</a>
                       </li>
                       <li class="list-unstyled me-2">
-                        <a href="#" class="project-tech d-flex justify-content-center align-items-center">css</a>
+                        <a href="#" class="project-tech tech d-flex justify-content-center align-items-center">css3</a>
                       </li>
                       <li class="list-unstyled me-2">
-                        <a href="#" class="project-tech d-flex justify-content-center align-items-center">bootstrap</a>
+                        <a href="#" class="project-tech tech d-flex justify-content-center align-items-center">bootstrap</a>
                       </li>
                       <li class="list-unstyled me-2">
-                        <a href="#" class="project-tech d-flex justify-content-center align-items-center">Javascript</a>
+                        <a href="#" class="project-tech tech d-flex justify-content-center align-items-center">Javascript</a>
+                      </li>
+                      <li class="list-unstyled me-2">
+                        <a href="#" class="project-tech tech d-flex justify-content-center align-items-center">jquery</a>
+                      </li>
+                      <li class="list-unstyled me-2">
+                        <a href="#" class="project-tech tech d-flex justify-content-center align-items-center">owl-carousel</a>
                       </li>
                     </ul>
                   </div>
@@ -821,24 +852,27 @@
                 <div class="project-details">
                   <h2>Ride-on</h2>
                   <p>
-                    A Bike Showroom Website is a sleek platform showcasing a
-                    wide range of bikes, detailed specifications, pricing, and
-                    features, with options for booking test rides and
-                    contacting the showroom.
+                    A Bike Showroom Website is a static, responsive platform built with HTML5, CSS3, and JavaScript. The website showcases a wide range of bikes, including detailed specifications, pricing, and features, and uses Owl Carousel for smooth image transitions, ensuring a seamless and visually appealing experience across all devices.
                   </p>
                   <div class="project-technologies mb-4">
                     <ul class="m-0 p-0 d-flex flex-wrap">
                       <li class="list-unstyled me-2">
-                        <a href="#" class="project-tech d-flex justify-content-center align-items-center">html</a>
+                        <a href="#" class="project-tech tech d-flex justify-content-center align-items-center">html5</a>
                       </li>
                       <li class="list-unstyled me-2">
-                        <a href="#" class="project-tech d-flex justify-content-center align-items-center">css</a>
+                        <a href="#" class="project-tech tech d-flex justify-content-center align-items-center">css3</a>
                       </li>
                       <li class="list-unstyled me-2">
-                        <a href="#" class="project-tech d-flex justify-content-center align-items-center">bootstrap</a>
+                        <a href="#" class="project-tech tech d-flex justify-content-center align-items-center">bootstrap</a>
                       </li>
                       <li class="list-unstyled me-2">
-                        <a href="#" class="project-tech d-flex justify-content-center align-items-center">Javascript</a>
+                        <a href="#" class="project-tech tech d-flex justify-content-center align-items-center">Javascript</a>
+                      </li>
+                      <li class="list-unstyled me-2">
+                        <a href="#" class="project-tech tech d-flex justify-content-center align-items-center">jquery</a>
+                      </li>
+                      <li class="list-unstyled me-2">
+                        <a href="#" class="project-tech tech d-flex justify-content-center align-items-center">owl-carousel</a>
                       </li>
                     </ul>
                   </div>
@@ -860,24 +894,27 @@
                 <div class="project-details">
                   <h2>Cozystay</h2>
                   <p>
-                    A Hotel Website is a professional platform that highlights
-                    room options, amenities, and services, allowing users to
-                    check availability, make reservations, and explore
-                    exclusive offers for a seamless booking experience.
+                    A Hotel Website is a static, responsive platform built with HTML5, CSS3, and JavaScript. The website highlights room options, amenities, and services, ensuring a seamless user experience. It utilizes Bootstrap for layout design and Owl Carousel for smooth image transitions, offering a visually appealing experience across all devices.
                   </p>
                   <div class="project-technologies mb-4">
                     <ul class="m-0 p-0 d-flex flex-wrap">
                       <li class="list-unstyled me-2">
-                        <a href="#" class="project-tech d-flex justify-content-center align-items-center">html</a>
+                        <a href="#" class="project-tech tech d-flex justify-content-center align-items-center">html5</a>
                       </li>
                       <li class="list-unstyled me-2">
-                        <a href="#" class="project-tech d-flex justify-content-center align-items-center">css</a>
+                        <a href="#" class="project-tech tech d-flex justify-content-center align-items-center">css3</a>
                       </li>
                       <li class="list-unstyled me-2">
-                        <a href="#" class="project-tech d-flex justify-content-center align-items-center">bootstrap</a>
+                        <a href="#" class="project-tech tech d-flex justify-content-center align-items-center">bootstrap</a>
                       </li>
                       <li class="list-unstyled me-2">
-                        <a href="#" class="project-tech d-flex justify-content-center align-items-center">Javascript</a>
+                        <a href="#" class="project-tech tech d-flex justify-content-center align-items-center">Javascript</a>
+                      </li>
+                      <li class="list-unstyled me-2">
+                        <a href="#" class="project-tech tech d-flex justify-content-center align-items-center">jquery</a>
+                      </li>
+                      <li class="list-unstyled me-2">
+                        <a href="#" class="project-tech tech d-flex justify-content-center align-items-center">owl-carousel</a>
                       </li>
                     </ul>
                   </div>
@@ -901,24 +938,27 @@
                 <div class="project-details">
                   <h2>Jetly</h2>
                   <p>
-                    An Aviation Website is a dynamic platform offering flight
-                    schedules, ticket booking, and real-time updates, along
-                    with information about destinations, services, and travel
-                    policies to ensure a seamless journey.
+                    An Aviation Website is a dynamic, responsive platform built with HTML5, CSS3, and JavaScript. It provides flight schedules, destination details, and travel policies, offering a user-friendly experience. The website leverages Owl Carousel for smooth image transitions, ensuring an engaging and visually appealing interface across all devices.
                   </p>
                   <div class="project-technologies mb-4">
                     <ul class="m-0 p-0 d-flex flex-wrap">
                       <li class="list-unstyled me-2">
-                        <a href="#" class="project-tech d-flex justify-content-center align-items-center">html</a>
+                        <a href="#" class="project-tech tech d-flex justify-content-center align-items-center">htnl5</a>
                       </li>
                       <li class="list-unstyled me-2">
-                        <a href="#" class="project-tech d-flex justify-content-center align-items-center">css</a>
+                        <a href="#" class="project-tech tech d-flex justify-content-center align-items-center">css3</a>
                       </li>
                       <li class="list-unstyled me-2">
-                        <a href="#" class="project-tech d-flex justify-content-center align-items-center">bootstrap</a>
+                        <a href="#" class="project-tech tech d-flex justify-content-center align-items-center">bootstrap</a>
                       </li>
                       <li class="list-unstyled me-2">
-                        <a href="#" class="project-tech d-flex justify-content-center align-items-center">Javascript</a>
+                        <a href="#" class="project-tech tech d-flex justify-content-center align-items-center">Javascript</a>
+                      </li>
+                      <li class="list-unstyled me-2">
+                        <a href="#" class="project-tech tech d-flex justify-content-center align-items-center">jquery</a>
+                      </li>
+                      <li class="list-unstyled me-2">
+                        <a href="#" class="project-tech tech d-flex justify-content-center align-items-center">owl-carousel</a>
                       </li>
                     </ul>
                   </div>
@@ -940,21 +980,24 @@
                 <div class="project-details">
                   <h2>Banker</h2>
                   <p>
-                    A Bank Website is a secure platform providing access to
-                    account management, online transactions, loan
-                    applications, and financial services, ensuring convenience
-                    and trust for customers.
+                    A Bank Website is a secure, responsive platform built with HTML5, CSS3, and JavaScript. It provides access to account management, online transactions, and financial services while leveraging Owl Carousel for smooth image transitions and AOS (Animate On Scroll) for engaging animations, ensuring a seamless user experience across all devices.
                   </p>
                   <div class="project-technologies mb-4">
                     <ul class="m-0 p-0 d-flex flex-wrap">
                       <li class="list-unstyled me-2">
-                        <a href="#" class="project-tech d-flex justify-content-center align-items-center">html</a>
+                        <a href="#" class="project-tech tech d-flex justify-content-center align-items-center">html5</a>
                       </li>
                       <li class="list-unstyled me-2">
-                        <a href="#" class="project-tech d-flex justify-content-center align-items-center">css</a>
+                        <a href="#" class="project-tech tech d-flex justify-content-center align-items-center">css3</a>
                       </li>
                       <li class="list-unstyled me-2">
-                        <a href="#" class="project-tech d-flex justify-content-center align-items-center">Javascript</a>
+                        <a href="#" class="project-tech tech d-flex justify-content-center align-items-center">Javascript</a>
+                      </li>
+                      <li class="list-unstyled me-2">
+                        <a href="#" class="project-tech tech d-flex justify-content-center align-items-center">owl-carousel</a>
+                      </li>
+                      <li class="list-unstyled me-2">
+                        <a href="#" class="project-tech tech d-flex justify-content-center align-items-center">aos</a>
                       </li>
                     </ul>
                   </div>
@@ -976,24 +1019,27 @@
                 <div class="project-details">
                   <h2>Fittlife</h2>
                   <p>
-                    A Gym Website is a dynamic platform showcasing fitness
-                    programs, membership plans, trainer profiles, and class
-                    schedules, with options for booking sessions and exploring
-                    health tips to inspire a healthy lifestyle.
+                    A Gym Website is a dynamic, responsive platform built with HTML5, CSS3, and JavaScript. It showcases fitness programs and trainer profiles while utilizing Bootstrap for layout design, Owl Carousel for smooth image transitions, and AOS (Animate On Scroll) for engaging animations, offering a visually appealing user experience across all devices.
                   </p>
                   <div class="project-technologies mb-4">
                     <ul class="m-0 p-0 d-flex flex-wrap">
                       <li class="list-unstyled me-2">
-                        <a href="#" class="project-tech d-flex justify-content-center align-items-center">html</a>
+                        <a href="#" class="project-tech tech d-flex justify-content-center align-items-center">html5</a>
                       </li>
                       <li class="list-unstyled me-2">
-                        <a href="#" class="project-tech d-flex justify-content-center align-items-center">css</a>
+                        <a href="#" class="project-tech tech d-flex justify-content-center align-items-center">css3</a>
                       </li>
                       <li class="list-unstyled me-2">
-                        <a href="#" class="project-tech d-flex justify-content-center align-items-center">bootstrap</a>
+                        <a href="#" class="project-tech tech d-flex justify-content-center align-items-center">bootstrap</a>
                       </li>
                       <li class="list-unstyled me-2">
-                        <a href="#" class="project-tech d-flex justify-content-center align-items-center">Javascript</a>
+                        <a href="#" class="project-tech tech d-flex justify-content-center align-items-center">Javascript</a>
+                      </li>
+                      <li class="list-unstyled me-2">
+                        <a href="#" class="project-tech tech d-flex justify-content-center align-items-center">owl-carousel</a>
+                      </li>
+                      <li class="list-unstyled me-2">
+                        <a href="#" class="project-tech tech d-flex justify-content-center align-items-center">aos</a>
                       </li>
                     </ul>
                   </div>
@@ -1015,21 +1061,27 @@
                 <div class="project-details">
                   <h2>Mediplus</h2>
                   <p>
-                    A Hospital Website is a comprehensive platform providing
-                    information about medical services, doctor appointments,
-                    specialties, and facilities, ensuring patients can access
-                    healthcare conveniently and efficiently.
+                    A Hospital Website is a comprehensive, responsive platform built with HTML5, CSS3, and JavaScript. It provides information about medical services and facilities while leveraging Owl Carousel for smooth image transitions, AOS (Animate On Scroll) for engaging animations, and Counter-Up for dynamic statistics, ensuring a user-friendly and visually appealing experience across all devices.
                   </p>
                   <div class="project-technologies mb-4">
                     <ul class="m-0 p-0 d-flex flex-wrap">
                       <li class="list-unstyled me-2">
-                        <a href="#" class="project-tech d-flex justify-content-center align-items-center">html</a>
+                        <a href="#" class="project-tech tech d-flex justify-content-center align-items-center">html5</a>
                       </li>
                       <li class="list-unstyled me-2">
-                        <a href="#" class="project-tech d-flex justify-content-center align-items-center">css</a>
+                        <a href="#" class="project-tech tech d-flex justify-content-center align-items-center">css3</a>
                       </li>
                       <li class="list-unstyled me-2">
-                        <a href="#" class="project-tech d-flex justify-content-center align-items-center">Javascript</a>
+                        <a href="#" class="project-tech tech d-flex justify-content-center align-items-center">Javascript</a>
+                      </li>
+                      <li class="list-unstyled me-2">
+                        <a href="#" class="project-tech tech d-flex justify-content-center align-items-center">owl-carousel</a>
+                      </li>
+                      <li class="list-unstyled me-2">
+                        <a href="#" class="project-tech tech d-flex justify-content-center align-items-center">aos</a>
+                      </li>
+                      <li class="list-unstyled me-2">
+                        <a href="#" class="project-tech tech d-flex justify-content-center align-items-center">counterup</a>
                       </li>
                     </ul>
                   </div>
@@ -1064,19 +1116,19 @@
                   <div class="project-technologies mb-4">
                     <ul class="m-0 p-0 d-flex flex-wrap">
                       <li class="list-unstyled me-2">
-                        <a href="#" class="project-tech d-flex justify-content-center align-items-center">html</a>
+                        <a href="#" class="project-tech tech d-flex justify-content-center align-items-center">html</a>
                       </li>
                       <li class="list-unstyled me-2">
-                        <a href="#" class="project-tech d-flex justify-content-center align-items-center">css</a>
+                        <a href="#" class="project-tech tech d-flex justify-content-center align-items-center">css</a>
                       </li>
                       <li class="list-unstyled me-2">
-                        <a href="#" class="project-tech d-flex justify-content-center align-items-center">Bootstrap</a>
+                        <a href="#" class="project-tech tech d-flex justify-content-center align-items-center">Bootstrap</a>
                       </li>
                       <li class="list-unstyled me-2">
-                        <a href="#" class="project-tech d-flex justify-content-center align-items-center">Javascript</a>
+                        <a href="#" class="project-tech tech d-flex justify-content-center align-items-center">Javascript</a>
                       </li>
                       <li class="list-unstyled me-2">
-                        <a href="#" class="project-tech d-flex justify-content-center align-items-center">reactjs</a>
+                        <a href="#" class="project-tech tech d-flex justify-content-center align-items-center">reactjs</a>
                       </li>
                     </ul>
                   </div>
@@ -1106,19 +1158,19 @@
                   <div class="project-technologies mb-4">
                     <ul class="m-0 p-0 d-flex flex-wrap">
                       <li class="list-unstyled me-2">
-                        <a href="#" class="project-tech d-flex justify-content-center align-items-center">html</a>
+                        <a href="#" class="project-tech tech d-flex justify-content-center align-items-center">html</a>
                       </li>
                       <li class="list-unstyled me-2">
-                        <a href="#" class="project-tech d-flex justify-content-center align-items-center">css</a>
+                        <a href="#" class="project-tech tech d-flex justify-content-center align-items-center">css</a>
                       </li>
                       <li class="list-unstyled me-2">
-                        <a href="#" class="project-tech d-flex justify-content-center align-items-center">Bootstrap</a>
+                        <a href="#" class="project-tech tech d-flex justify-content-center align-items-center">Bootstrap</a>
                       </li>
                       <li class="list-unstyled me-2">
-                        <a href="#" class="project-tech d-flex justify-content-center align-items-center">Javascript</a>
+                        <a href="#" class="project-tech tech d-flex justify-content-center align-items-center">Javascript</a>
                       </li>
                       <li class="list-unstyled me-2">
-                        <a href="#" class="project-tech d-flex justify-content-center align-items-center">reactjs</a>
+                        <a href="#" class="project-tech tech d-flex justify-content-center align-items-center">reactjs</a>
                       </li>
                     </ul>
                   </div>
@@ -1147,20 +1199,20 @@
                   <div class="project-technologies mb-4">
                     <ul class="m-0 p-0 d-flex flex-wrap">
                       <li class="list-unstyled me-2">
-                        <a href="#" class="project-tech d-flex justify-content-center align-items-center">html</a>
+                        <a href="#" class="project-tech tech d-flex justify-content-center align-items-center">html</a>
                       </li>
                       <li class="list-unstyled me-2">
-                        <a href="#" class="project-tech d-flex justify-content-center align-items-center">css</a>
+                        <a href="#" class="project-tech tech d-flex justify-content-center align-items-center">css</a>
                       </li>
                       <li class="list-unstyled me-2">
-                        <a href="#" class="project-tech d-flex justify-content-center align-items-center">Bootstrap</a>
+                        <a href="#" class="project-tech tech d-flex justify-content-center align-items-center">Bootstrap</a>
                       </li>
                       <li class="list-unstyled me-2">
-                        <a href="#" class="project-tech d-flex justify-content-center align-items-center">Javascript</a>
+                        <a href="#" class="project-tech tech d-flex justify-content-center align-items-center">Javascript</a>
                       </li>
                       <li class="list-unstyled me-2">
-                        <a href="#" class="project-tech d-flex justify-content-center align-items-center">reactjs</a>
-                      </li>
+                        <a href="#" class="project-tech tech d-flex justify-content-center align-items-center">reactjs</a>
+                      </li> 
                     </ul>
                   </div>
                   <div class="visit-project">
@@ -1189,19 +1241,19 @@
                   <div class="project-technologies mb-4">
                     <ul class="m-0 p-0 d-flex flex-wrap">
                       <li class="list-unstyled me-2">
-                        <a href="#" class="project-tech d-flex justify-content-center align-items-center">html</a>
+                        <a href="#" class="project-tech tech d-flex justify-content-center align-items-center">html</a>
                       </li>
                       <li class="list-unstyled me-2">
-                        <a href="#" class="project-tech d-flex justify-content-center align-items-center">css</a>
+                        <a href="#" class="project-tech tech d-flex justify-content-center align-items-center">css</a>
                       </li>
                       <li class="list-unstyled me-2">
-                        <a href="#" class="project-tech d-flex justify-content-center align-items-center">Bootstrap</a>
+                        <a href="#" class="project-tech tech d-flex justify-content-center align-items-center">Bootstrap</a>
                       </li>
                       <li class="list-unstyled me-2">
-                        <a href="#" class="project-tech d-flex justify-content-center align-items-center">Javascript</a>
+                        <a href="#" class="project-tech tech d-flex justify-content-center align-items-center">Javascript</a>
                       </li>
                       <li class="list-unstyled me-2">
-                        <a href="#" class="project-tech d-flex justify-content-center align-items-center">reactjs</a>
+                        <a href="#" class="project-tech tech d-flex justify-content-center align-items-center">reactjs</a>
                       </li>
                     </ul>
                   </div>
@@ -1330,34 +1382,6 @@
                         JavaSCript. Created projects like Todo app,
                         Calculator, Login page etc.
                         <!-- <ul class="p-0 m-0">
-                              <li></li>
-                              <li></li>
-                            </ul> -->
-                      </p>
-                    </div>
-                    <div class="education-list">
-                      <div class="education-heading pb-3 mb-3">
-                        <div class="edu-title mb-3">
-                          <h4 class="list-title">Web Development Intern</h4>
-                          <span class="list-subtitle">CodeClause PVT LTD (June 2024 - July 2024)</span>
-                        </div>
-                        <div class="d-flex align-items-center flex-wrap">
-                          <div class="percentage mx-1 mb-2">
-                            <span>HTML</span>
-                          </div>
-                          <div class="percentage mx-1 mb-2">
-                            <span>CSS</span>
-                          </div>
-                          <div class="percentage mx-1 mb-2">
-                            <span>JavaScript</span>
-                          </div>
-                        </div>
-                      </div>
-                      <p class="edu-desc">
-                        Explored new technologies and approches to streamline
-                        processes. Created projects like snake game, hospital
-                        website, simon game etc.
-                        <!-- <ul class="m-0 p-0">
                               <li></li>
                               <li></li>
                             </ul> -->
@@ -1529,30 +1553,6 @@
                         Calculator, Login page etc.
                       </p>
                     </div>
-                    <div class="education-list">
-                      <div class="education-heading pb-3 mb-3">
-                        <div class="edu-title mb-3">
-                          <h4 class="list-title">Web Development Intern</h4>
-                          <span class="list-subtitle">CodeClause PVT LTD (June 2024 - July 2024)</span>
-                        </div>
-                        <div class="d-flex align-items-center flex-wrap">
-                          <div class="percentage mx-1 mb-2">
-                            <span>HTML</span>
-                          </div>
-                          <div class="percentage mx-1 mb-2">
-                            <span>CSS</span>
-                          </div>
-                          <div class="percentage mx-1 mb-2">
-                            <span>JavaScript</span>
-                          </div>
-                        </div>
-                      </div>
-                      <p class="edu-desc">
-                        Explored new technologies and approches to streamline
-                        processes. Created projects like snake game, hospital
-                        website, simon game etc.
-                      </p>
-                    </div>
                   </div>
                 </div>
                 <div class="col-12 col-md-6">
@@ -1633,59 +1633,6 @@
             </div>
             <div class="col-lg-6 order-2 order-lg-1">
               <div class="contact-form-div">
-                <!-- <form class="contact-form" id="contactForm" method="post" accept="">
-                  <div class="row">
-                    <div class="col-sm-6">
-                      <div class="form-input mb-3">
-                        <input type="text" placeholder="First Name *" id="firstname" />
-                      </div>
-                    </div>
-                    <div class="col-sm-6">
-                        <div class="form-input mb-3">
-                          <input type="text" placeholder="Last Name *" id="lastname" />
-                        </div>
-                      </div>
-                      <div class="col-sm-6">
-                        <div class="form-input mb-3">
-                          <input
-                            type="tel"
-                            placeholder="Phone Number *"
-                            id="phone"
-                          />
-                        </div>
-                      </div>
-                      <div class="col-sm-6">
-                        <div class="form-input mb-3">
-                          <input type="email" placeholder="Email *" id="email" />
-                        </div>
-                      </div>
-                      <div class="col-12">
-                        <div class="form-input mb-3">
-                          <input type="text" placeholder="Subject *" id="subject" />
-                        </div>
-                      </div>
-                      <div class="col-12">
-                        <div class="form-input mb-3">
-                          <textarea
-                            name="message"
-                            id="message"
-                            placeholder="Message *"
-                            id="message"
-                          ></textarea>
-                        </div>
-                      </div>
-                    <div class="col-12">
-                      <div class="form-btn">
-                        <button type="submit" class="submit-btn" onclick="audioPlay()">
-                          send message
-                        </button>
-                        <span id="error" style="color: red;"></span>
-                      </div>
-                    </div>
-                  </div>
-                </form> -->
-
-
                 <form class="contact-form" id="contactForm" method="post" accept="">
                   <div class="row">
                     <div class="col-sm-6">
@@ -1733,28 +1680,18 @@
                     </div>
                   </div>
                 </form>
-                <!-- <div class="toast-container">
-                  <div id="successToast" class="toast align-items-center text-bg-success border-0" role="alert"
+                <div class="toast-container">
+                  <div id="successToast" class="toast custom-toast align-items-center" role="alert"
                     aria-live="assertive" aria-atomic="true">
                     <div class="d-flex">
                       <div class="toast-body">
                         Form submitted successfully!
                       </div>
-                      <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast"
+                      <button type="button" class="btn-close me-2 m-auto" data-bs-dismiss="toast"
                         aria-label="Close"></button>
                     </div>
                   </div>
-                </div> -->
-                <div class="toast-container">
-                  <div id="successToast" class="toast custom-toast align-items-center" role="alert" aria-live="assertive" aria-atomic="true">
-                      <div class="d-flex">
-                          <div class="toast-body">
-                              Form submitted successfully!
-                          </div>
-                          <button type="button" class="btn-close me-2 m-auto" data-bs-dismiss="toast" aria-label="Close"></button>
-                      </div>
-                  </div>
-              </div>
+                </div>
               </div>
             </div>
           </div>

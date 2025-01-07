@@ -645,6 +645,7 @@ html {
   font-family: var(--sora);
   color: var(--color2);
   line-height: 24px;
+  text-align: justify;
 }
 .project-feature span {
   display: block;
@@ -655,7 +656,8 @@ html {
   margin-bottom: 15px;
 }
 .project-technologies {
-  margin: 30px 0 70px 0;
+  /* margin: 30px 0 70px 0; */
+  margin: 30px 0;
 }
 .project-tech {
   text-decoration: none;
@@ -723,7 +725,7 @@ html {
 }
 .all-projects {
   text-decoration: none;
-  padding: 17px 35px;
+  padding: 17px 50px 17px 35px;
   font-size: 15px;
   color: var(--color2);
   font-weight: 700;
@@ -747,6 +749,67 @@ html {
 }
 .all-projects:hover {
   background-position: -100%;
+}
+.chevron-div {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+.chevron {
+  position: absolute;
+  top: -15px;
+  display: inline-block;
+  width: 0.6rem; 
+  height: 0.14rem; 
+  opacity: 0;
+  transform: scale(0.3);
+  animation: move-chevron 3s ease-out infinite;
+  margin-left: 15px; 
+}
+.all-projects .chevron:first-child {
+  animation: move-chevron 3s ease-out 1s infinite;
+}
+.all-projects .chevron:nth-child(2) {
+  animation: move-chevron 3s ease-out 2s infinite;
+}
+.all-projects .chevron:nth-child(3) {
+  animation: move-chevron 3s ease-out 3s infinite;
+}
+.all-projects .chevron:before,
+.all-projects .chevron:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 50%;
+  background: white; 
+}
+.all-projects .chevron:before {
+  left: 0;
+  transform: skewY(30deg);
+}
+.all-projects .chevron:after {
+  right: 0;
+  width: 50%;
+  transform: skewY(-30deg);
+}
+
+@keyframes move-chevron {
+  25% {
+    opacity: 1;
+  }
+  33.3% {
+    opacity: 1;
+    transform: translateY(0.9rem); /* Adjusted translate value */
+  }
+  66.6% {
+    opacity: 1;
+    transform: translateY(1.3rem); /* Adjusted translate value */
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(2rem) scale(0.5);
+  }
 }
 
 
@@ -794,7 +857,9 @@ html {
   color: var(--color2);
   font-family: var(--sora);
 }
-
+.tech{
+  font-size: 14px;
+}
 
 
 
@@ -1198,12 +1263,6 @@ html {
   font-size: 0.9em;
   margin-top: 5px;
 }
-/* .toast-container {
-  position: fixed;
-  bottom: 1rem;
-  right: 1rem;
-  z-index: 1055;
-} */
 .custom-toast {
   background-color: #8750f7 !important; 
   color: #fff !important; 

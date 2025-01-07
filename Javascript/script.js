@@ -43,7 +43,7 @@ $(document).ready(function () {
   $(".project-slider").owlCarousel({
     items: 1,
     dots: true,
-    autoplay: true,
+    // autoplay: true,
     loop: true,
     margin: 20,
     responsive: {
@@ -59,11 +59,15 @@ $(document).ready(function () {
   });
 });
 
+
+
 // sroll top btn
 document.getElementById("scrollBtn").addEventListener("click", scrollTop);
 function scrollTop() {
   window.scrollTo({ top: 0, behavior: "smooth" });
 }
+
+
 
 //mute-btn
 var silence = false;
@@ -81,6 +85,8 @@ function muteAudio() {
   }
 }
 
+
+
 // audio btn
 var audio = document.getElementById("audioMusic");
 function audioPlay() {
@@ -89,6 +95,8 @@ function audioPlay() {
   } else {
   }
 }
+
+
 
 // scroll percentage btn
 function scrollPercentage() {
@@ -107,10 +115,15 @@ function scrollPercentage() {
 window.addEventListener("scroll", scrollPercentage);
 window.onload = scrollPercentage;
 
+
+
 // loader
 setTimeout(function () {
   document.querySelector(".loading").style.display = "none";
 }, 1000);
+
+
+
 
 //scroll navbar
 function scrollFunction() {
@@ -124,6 +137,8 @@ function scrollFunction() {
   }
 }
 window.addEventListener("scroll", scrollFunction);
+
+
 
 // cursor
 const coords = { x: 0, y: 0 };
@@ -176,6 +191,9 @@ function animateCircles() {
   requestAnimationFrame(animateCircles);
 }
 animateCircles();
+
+
+
 
 //resume section button
 document.querySelector(".education-btn1").style.backgroundColor = "#050709";
@@ -231,65 +249,65 @@ function showExperience() {
 //contact form validations
 const contactForm = document.getElementById('contactForm');
 
-        contactForm.addEventListener('submit', function (event) {
-            event.preventDefault(); // Prevent default form submission
+contactForm.addEventListener('submit', function (event) {
+  event.preventDefault(); // Prevent default form submission
 
-            // Clear previous error messages
-            document.querySelectorAll('.error-message').forEach(msg => msg.textContent = '');
+  // Clear previous error messages
+  document.querySelectorAll('.error-message').forEach(msg => msg.textContent = '');
 
-            // Collect input values
-            const firstname = document.getElementById('firstname').value.trim();
-            const lastname = document.getElementById('lastname').value.trim();
-            const phone = document.getElementById('phone').value.trim();
-            const email = document.getElementById('email').value.trim();
-            const subject = document.getElementById('subject').value.trim();
-            const message = document.getElementById('message').value.trim();
+  // Collect input values
+  const firstname = document.getElementById('firstname').value.trim();
+  const lastname = document.getElementById('lastname').value.trim();
+  const phone = document.getElementById('phone').value.trim();
+  const email = document.getElementById('email').value.trim();
+  const subject = document.getElementById('subject').value.trim();
+  const message = document.getElementById('message').value.trim();
 
-            let hasError = false;
+  let hasError = false;
 
-            // Validate First Name
-            if (firstname === '') {
-                document.getElementById('error-firstname').textContent = 'First Name is required.';
-                hasError = true;
-            }
+  // Validate First Name
+  if (firstname === '') {
+    document.getElementById('error-firstname').textContent = 'First Name is required.';
+    hasError = true;
+  }
 
-            // Validate Last Name
-            if (lastname === '') {
-                document.getElementById('error-lastname').textContent = 'Last Name is required.';
-                hasError = true;
-            }
+  // Validate Last Name
+  if (lastname === '') {
+    document.getElementById('error-lastname').textContent = 'Last Name is required.';
+    hasError = true;
+  }
 
-            // Validate Phone Number
-            if (!/^\d{10}$/.test(phone)) {
-                document.getElementById('error-phone').textContent = 'Phone Number must be 10 digits.';
-                hasError = true;
-            }
+  // Validate Phone Number
+  if (!/^\d{10}$/.test(phone)) {
+    document.getElementById('error-phone').textContent = 'Phone Number must be 10 digits.';
+    hasError = true;
+  }
 
-            // Validate Email
-            if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
-                document.getElementById('error-email').textContent = 'Please enter a valid email address.';
-                hasError = true;
-            }
+  // Validate Email
+  if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
+    document.getElementById('error-email').textContent = 'Please enter a valid email address.';
+    hasError = true;
+  }
 
-            // Validate Subject
-            if (subject === '') {
-                document.getElementById('error-subject').textContent = 'Subject is required.';
-                hasError = true;
-            }
+  // Validate Subject
+  if (subject === '') {
+    document.getElementById('error-subject').textContent = 'Subject is required.';
+    hasError = true;
+  }
 
-            // Validate Message
-            if (message.length < 10) {
-                document.getElementById('error-message').textContent = 'Message must be at least 10 characters.';
-                hasError = true;
-            }
+  // Validate Message
+  if (message.length < 10) {
+    document.getElementById('error-message').textContent = 'Message must be at least 10 characters.';
+    hasError = true;
+  }
 
-            // Submit the form if no errors
-            if (!hasError) {
-                // Display the toast
-                const successToast = new bootstrap.Toast(document.getElementById('successToast'));
-                successToast.show();
+  // Submit the form if no errors
+  if (!hasError) {
+    // Display the toast
+    const successToast = new bootstrap.Toast(document.getElementById('successToast'));
+    successToast.show();
 
-                // Optionally, reset the form
-                contactForm.reset();
-            }
-        });
+    // Optionally, reset the form
+    contactForm.reset();
+  }
+});
