@@ -43,7 +43,7 @@ $(document).ready(function () {
   $(".project-slider").owlCarousel({
     items: 1,
     dots: true,
-    // autoplay: true,
+    autoplay: true,
     loop: true,
     margin: 20,
     responsive: {
