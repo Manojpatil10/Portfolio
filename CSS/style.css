@@ -1091,16 +1091,18 @@ html {
 
 .jquery span,
 .react span,
-.sql span,
-.express span {
+.ejs span,
+.express span,
+.mongoose span,
+.redux span,
+.mongodb span {
   width: 75%;
 }
 
 .bootstrap span {
   width: 80%;
 }
-.node span,
-.mongodb span {
+.node span{
   width: 70%;
 }
 .html span,
@@ -1141,15 +1143,18 @@ html {
 
 .jquery span::after,
 .react span::after,
-.sql span::after,
-.express span::after {
+.redux span::after,
+.ejs span::after,
+.express span::after,
+.mongoose span::after,
+.mongodb span::after {
   content: "75%";
 }
 
 .bootstrap span::after {
   content: "80%";
 }
-.mongodb span::after,
+
 .node span::after {
   content: "70%";
 }
