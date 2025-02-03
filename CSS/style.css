@@ -1095,14 +1095,18 @@ html {
 .express span,
 .mongoose span,
 .redux span,
-.mongodb span {
+.mongodb span,
+.REST span {
   width: 75%;
 }
 
-.bootstrap span {
+.bootstrap span,
+.git span,
+.react-router span {
   width: 80%;
 }
-.node span{
+.node span,
+.redux-toolkit span{
   width: 70%;
 }
 .html span,
@@ -1147,15 +1151,19 @@ html {
 .ejs span::after,
 .express span::after,
 .mongoose span::after,
-.mongodb span::after {
+.mongodb span::after,
+.REST span::after {
   content: "75%";
 }
 
-.bootstrap span::after {
+.bootstrap span::after,
+.git span::after,
+.react-router span::after {
   content: "80%";
 }
 
-.node span::after {
+.node span::after,
+.redux-toolkit span::after {
   content: "70%";
 }
 .html span::after,
